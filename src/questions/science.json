@@ -1,0 +1,204 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following is an example of a chemical change?",
+      "options": [
+        "Melting ice",
+        "Boiling water",
+        "Burning wood",
+        "Mixing salt in water"
+      ],
+      "answer": "Burning wood"
+    },
+    {
+      "question": "What is the atomic number of carbon?",
+      "options": [
+        "5",
+        "12",
+        "6",
+        "14"
+      ],
+      "answer": "6"
+    },
+    {
+      "question": "What causes tides in the oceans?",
+      "options": [
+        "Gravitational pull of the Moon and the Sun",
+        "Winds blowing over the oceans",
+        "Earth's rotation",
+        "Underwater earthquakes"
+      ],
+      "answer": "Gravitational pull of the Moon and the Sun"
+    },
+    {
+      "question": "Which gas is most abundant in the Earth's atmosphere?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Helium"
+      ],
+      "answer": "Nitrogen"
+    },
+    {
+      "question": "What is the powerhouse of the cell?",
+      "options": [
+        "Mitochondrion",
+        "Nucleus",
+        "Ribosome",
+        "Endoplasmic reticulum"
+      ],
+      "answer": "Mitochondrion"
+    },
+    {
+      "question": "Who proposed the theory of relativity?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Galileo Galilei",
+        "Stephen Hawking"
+      ],
+      "answer": "Albert Einstein"
+    },
+    {
+      "question": "What is the process by which plants make their own food?",
+      "options": [
+        "Photosynthesis",
+        "Respiration",
+        "Transpiration",
+        "Fermentation"
+      ],
+      "answer": "Photosynthesis"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": [
+        "Mars",
+        "Jupiter",
+        "Saturn",
+        "Mercury"
+      ],
+      "answer": "Mars"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": [
+        "Ag",
+        "Au",
+        "Pb",
+        "Fe"
+      ],
+      "answer": "Au"
+    },
+    {
+      "question": "Which scientist is credited with discovering the electron?",
+      "options": [
+        "Niels Bohr",
+        "Ernest Rutherford",
+        "J.J. Thomson",
+        "Marie Curie"
+      ],
+      "answer": "J.J. Thomson"
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "options": [
+        "Steel",
+        "Diamond",
+        "Graphite",
+        "Quartz"
+      ],
+      "answer": "Diamond"
+    },
+    {
+      "question": "What causes the sky to appear blue?",
+      "options": [
+        "Reflection",
+        "Refraction",
+        "Dispersion",
+        "Scattering"
+      ],
+      "answer": "Scattering"
+    },
+    {
+      "question": "Which disease is caused by a deficiency of Vitamin C?",
+      "options": [
+        "Rickets",
+        "Scurvy",
+        "Beriberi",
+        "Goiter"
+      ],
+      "answer": "Scurvy"
+    },
+    {
+      "question": "What is the unit of electrical resistance?",
+      "options": [
+        "Ampere",
+        "Ohm",
+        "Watt",
+        "Volt"
+      ],
+      "answer": "Ohm"
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "options": [
+        "Liver",
+        "Heart",
+        "Lungs",
+        "Skin"
+      ],
+      "answer": "Skin"
+    },
+    {
+      "question": "Which metal is liquid at room temperature?",
+      "options": [
+        "Mercury",
+        "Iron",
+        "Copper",
+        "Aluminum"
+      ],
+      "answer": "Mercury"
+    },
+    {
+      "question": "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+      "options": [
+        "Venus",
+        "Neptune",
+        "Uranus",
+        "Pluto"
+      ],
+      "answer": "Venus"
+    },
+    {
+      "question": "What type of energy is stored in a battery?",
+      "options": [
+        "Kinetic energy",
+        "Potential energy",
+        "Chemical energy",
+        "Solar energy"
+      ],
+      "answer": "Chemical energy"
+    },
+    {
+      "question": "Which animal is known to be the largest mammal on Earth?",
+      "options": [
+        "Elephant",
+        "Blue whale",
+        "Giraffe",
+        "Hippopotamus"
+      ],
+      "answer": "Blue whale"
+    },
+    {
+      "question": "What is the process by which water changes from a liquid to a gas?",
+      "options": [
+        "Condensation",
+        "Sublimation",
+        "Evaporation",
+        "Freezing"
+      ],
+      "answer": "Evaporation"
+    }
+  ]
+}
