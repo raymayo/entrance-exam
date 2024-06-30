@@ -22,12 +22,15 @@ const ExamEntry = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Data Submitted:', formData);
-    // Add form submission logic here (e.g., sending data to an API)
+
+    // Save registration data to localStorage
+    localStorage.setItem('isRegistered', 'true');
+    localStorage.setItem('userData', JSON.stringify(formData));
+
     navigate('/exams');
   };
 
   return (
-    <> 
     <form onSubmit={handleSubmit}>
       <div>
         <label>Reg. No.</label>
@@ -71,7 +74,6 @@ const ExamEntry = () => {
       </div>
       <button type="submit">Register</button>
     </form>
-    </>
   );
 };
 

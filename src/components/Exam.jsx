@@ -1,14 +1,25 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
-const Exam = ({ examName }) => {
+const Exam = () => {
+  const { examName } = useParams();
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState([]);
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(null); // Changed from 0 to null
   const localStorageKey = `answers-${examName}`;
   const localStorageQuestionsKey = `questions-${examName}`;
+  const localStorageSubmissionKey = `submitted-${examName}`;
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
+      const isSubmitted = localStorage.getItem(localStorageSubmissionKey);
+      if (isSubmitted) {
+        navigate('/exams');
+        return;
+      }
+
       try {
         const storedQuestions = JSON.parse(localStorage.getItem(localStorageQuestionsKey));
         if (storedQuestions) {
@@ -40,7 +51,7 @@ const Exam = ({ examName }) => {
     };
 
     fetchData();
-  }, [examName]);
+  }, [examName, navigate]);
 
   const shuffleArray = (array) => {
     // Shuffling algorithm (Fisher-Yates shuffle)
@@ -68,6 +79,8 @@ const Exam = ({ examName }) => {
       }
     });
     setScore(newScore);
+    localStorage.setItem(localStorageSubmissionKey, 'true'); // Mark the exam as submitted
+    navigate('/exams');
   };
 
   return (
@@ -97,9 +110,6 @@ const Exam = ({ examName }) => {
         ))}
       </ol>
       <button onClick={handleSubmit}>Submit Answers</button>
-      {score > 0 && (
-        <p>Your score: {score} out of {questions.length}</p>
-      )}
     </div>
   );
 };
