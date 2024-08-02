@@ -31,7 +31,8 @@ const ExamEntry = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='mainEntry'>
+      <h1 className='titleHead'>ENTRANCE EXAM</h1>
       <div>
         <label>Reg. No.</label>
         <input
