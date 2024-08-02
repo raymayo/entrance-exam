@@ -36,9 +36,19 @@ const ExamTable = () => {
   const userData = JSON.parse(localStorage.getItem('userData')) || {};
 
   return (
-    <div>
+    <div className='mainTable'>
       <h2>Exam Table</h2>
-      <p>Registered User: {userData.firstName} {userData.middleName} {userData.surName} (Reg. No: {userData.regNo})</p>
+      <div className="userInfo">
+      
+        <p><span>Register No:</span> {userData.regNo}</p>
+       
+        <p><span>First Name:</span> {userData.firstName}</p>
+        
+        <p><span>Middle Name:</span> {userData.middleName}</p>
+        
+        <p><span>Last Name:</span> {userData.surName}</p>
+      </div>
+      <div className="examLinks">
       <div>
         <Link to="/exams/math">Math</Link>
         {scores.math !== null && <span> - Score: {scores.math}</span>}
@@ -54,6 +64,7 @@ const ExamTable = () => {
       <div>
         <Link to="/exams/science">Science</Link>
         {scores.science !== null && <span> - Score: {scores.science}</span>}
+      </div>
       </div>
     </div>
   );
