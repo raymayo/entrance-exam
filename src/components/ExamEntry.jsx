@@ -34,7 +34,7 @@ const ExamEntry = () => {
     <form onSubmit={handleSubmit} className='mainEntry'>
       <h1 className='titleHead'>ENTRANCE EXAM</h1>
       <div>
-        <label>Reg. No.</label>
+        <label>Reg. No</label>
         <input
           type="number"
           name="regNo"
