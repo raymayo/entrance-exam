@@ -84,11 +84,11 @@ const Exam = () => {
   };
 
   return (
-    <div>
+    <div className='examBox'>
       <h2>{examName} Questions</h2>
-      <ol>
+      <ol className='questionContainer'>
         {questions.map((question, index) => (
-          <li key={index}>
+          <li key={index} className='questionBox'>
             <h3>{question.question}</h3>
             <ul>
               {question.options.map((option, idx) => (

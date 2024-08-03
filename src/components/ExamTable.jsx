@@ -45,7 +45,7 @@ const ExamTable = () => {
 
 	return (
 		<div className="mainTable">
-			<h2>Exam Table</h2>
+			<h2>Student Info & Exam Table</h2>
 			<div className="userInfo">
 				<p>
 					<span>Register No:</span> {userData.regNo}
