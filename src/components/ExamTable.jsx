@@ -36,12 +36,18 @@ const ExamTable = () => {
 			filipino: getScore('filipino'),
 			science: getScore('science'),
 		});
+
+    	// Update userData in localStorage with scores
+		const userData = JSON.parse(localStorage.getItem('userData')) || {};
+		localStorage.setItem('userData', JSON.stringify({ ...userData, scores: newScores }));
 	}, []);
 
 	// Retrieve and display user data
 	const userData = JSON.parse(localStorage.getItem('userData')) || {};
 
 	console.log(userData);
+
+
 
 	return (
 		<div className="mainTable">

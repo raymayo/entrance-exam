@@ -80,6 +80,14 @@ const Exam = () => {
     });
     setScore(newScore);
     localStorage.setItem(localStorageSubmissionKey, 'true'); // Mark the exam as submitted
+
+    // Save the score in localStorage
+  const existingUserData = JSON.parse(localStorage.getItem('userData')) || {};
+  const updatedUserData = {
+    ...existingUserData,
+    [examName]: newScore // Save the score under the exam name key
+  };
+  localStorage.setItem('userData', JSON.stringify(updatedUserData));
     navigate('/exams');
   };
 
