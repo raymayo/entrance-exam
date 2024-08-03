@@ -127,7 +127,7 @@ const ExamEntry = () => {
 						<input
 							type="text"
 							name="birthday"
-							placeholder="MM/DD/YY"
+							placeholder="MM/DD/YYYY"
 							value={formData.birthday}
 							onChange={handleChange}
 							required
