@@ -4,6 +4,7 @@ import { BiMath } from 'react-icons/bi';
 import { BiAtom } from "react-icons/bi";
 import { TbMessageLanguage } from "react-icons/tb";
 import { PiSunHorizonFill } from "react-icons/pi";
+import ExelEditor from './ExelEditor'
 
 const ExamTable = () => {
 	const [scores, setScores] = useState({
@@ -37,9 +38,7 @@ const ExamTable = () => {
 			science: getScore('science'),
 		});
 
-    	// Update userData in localStorage with scores
-		const userData = JSON.parse(localStorage.getItem('userData')) || {};
-		localStorage.setItem('userData', JSON.stringify({ ...userData, scores: newScores }));
+    
 	}, []);
 
 	// Retrieve and display user data
@@ -126,6 +125,7 @@ const ExamTable = () => {
 					<Link to="/exams/science">Take Exam</Link>
 				</div>
 			</div>
+			<ExelEditor/>
 		</div>
 	);
 };

@@ -33,14 +33,21 @@ const ExamEntry = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log('Form Data Submitted:', formData);
-
+		// Convert all string values to uppercase
+		const upperCaseFormData = Object.fromEntries(
+		  Object.entries(formData).map(([key, value]) =>
+			typeof value === 'string' ? [key, value.toUpperCase()] : [key, value]
+		  )
+		);
+	
+		console.log('Form Data Submitted:', upperCaseFormData);
+	
 		// Save registration data to localStorage
 		localStorage.setItem('isRegistered', 'true');
-		localStorage.setItem('userData', JSON.stringify(formData));
-
+		localStorage.setItem('userData', JSON.stringify(upperCaseFormData));
+	
 		navigate('/exams');
-	};
+	  };
 
 	function formatDate(date) {
 		const day = String(date.getDate()).padStart(2, '0');

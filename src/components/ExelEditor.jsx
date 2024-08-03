@@ -31,13 +31,18 @@ const ExcelEditor = () => {
   // Handle editing the file with formData from localStorage
   const handleEdit = () => {
     if (data) {
+      // Display confirmation box
+      const isConfirmed = window.confirm('Are you sure you want to submit your data and scores?');
+
+      if (!isConfirmed) {
+        return;
+      }
+
       const sheetName = data.SheetNames[0];
       const worksheet = data.Sheets[sheetName];
 
       // Retrieve formData from localStorage
       const formData = JSON.parse(localStorage.getItem('userData'));
-
-      console.log(typeof(formData.english))
 
       if (formData) {
         // Map formData to specific cells
@@ -100,9 +105,9 @@ const ExcelEditor = () => {
   };
 
   return (
-    <div>
-      <button onClick={handleEdit} disabled={!data}>Edit and Download</button>
-    </div>
+    <>
+      <button onClick={handleEdit} disabled={!data} className='finalSubmit'>Submit Data & Scores</button>
+    </>
   );
 };
 
