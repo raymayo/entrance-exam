@@ -17,6 +17,12 @@
   --black: #121212;
 }
 
+/* #root{
+  >*{
+    outline: solid 1px red;
+  }
+} */
+
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -162,7 +168,7 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 
   h1 {
     font-size: 4rem;
@@ -243,20 +249,21 @@ body::after {
 
   input:focus {
     border-bottom: solid 2px var(--black);
-    margin-bottom: -1px;
     outline: none;
   }
 
   select:focus {
     border-bottom: solid 2px var(--black);
-    margin-bottom: -1px;
     outline: none;
   }
 
 
   input[type="text"]:disabled {
-    color: #656565;
+    color: var(--black);
+    font-weight: 700;
+    cursor: not-allowed;
   }
+  
 
   select {
     font-size: 1rem;
@@ -286,6 +293,11 @@ body::after {
     background-color: var(--black);
     border: none;
     color: var(--bg);
+  }
+
+  button:active{
+    border: none;
+    outline: none;
   }
 
 
@@ -451,3 +463,4 @@ body::after {
 .finalSubmit{
   background-color: var(--black);
 }
+

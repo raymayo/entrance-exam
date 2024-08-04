@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const ExamEntry = () => {
 	const [formData, setFormData] = useState({
@@ -251,7 +252,7 @@ const ExamEntry = () => {
 						/>
 					</div>
 				</div>
-				<button type="submit">Register</button>
+				<motion.button type="submit" whileHover={{scale:1.05}} whileTap={{scale:1}}>Register</motion.button>
 			</form>
 		</>
 	);
