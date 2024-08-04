@@ -325,6 +325,11 @@ body::after {
     text-align: left;
     border-radius: 1rem;
     padding: 2rem;
+    gap: 1rem;
+
+    >*{
+      /* border: solid 1px red; */
+    }
 
     span {
       display: block;

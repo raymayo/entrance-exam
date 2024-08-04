@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import * as XLSX from 'xlsx';
 
@@ -46,6 +47,7 @@ const ExcelEditor = () => {
 
       if (formData) {
         // Map formData to specific cells
+        
         const cellMapping = {
           'A2': formData.regNo,
           'B2': formData.fullName,
@@ -65,6 +67,7 @@ const ExcelEditor = () => {
           'P2': formData.english,
           'Q2': formData.filipino,
           'R2': formData.science,
+          'S2': formData.math + formData.english + formData.filipino + formData.science
         };
 
         // Update cells in the worksheet

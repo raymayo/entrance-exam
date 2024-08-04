@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -19,7 +20,7 @@ const ExamEntry = () => {
 		transfereeCourse: '',
 	});
 
-	const [date, setDate] = useState(formatDate(new Date()));
+	// const [date, setDate] = useState(formatDate(new Date()));
 
 	const navigate = useNavigate();
 
@@ -35,19 +36,19 @@ const ExamEntry = () => {
 		e.preventDefault();
 		// Convert all string values to uppercase
 		const upperCaseFormData = Object.fromEntries(
-		  Object.entries(formData).map(([key, value]) =>
-			typeof value === 'string' ? [key, value.toUpperCase()] : [key, value]
-		  )
+			Object.entries(formData).map(([key, value]) =>
+				typeof value === 'string' ? [key, value.toUpperCase()] : [key, value]
+			)
 		);
-	
+
 		console.log('Form Data Submitted:', upperCaseFormData);
-	
+
 		// Save registration data to localStorage
 		localStorage.setItem('isRegistered', 'true');
 		localStorage.setItem('userData', JSON.stringify(upperCaseFormData));
-	
+
 		navigate('/exams');
-	  };
+	};
 
 	function formatDate(date) {
 		const day = String(date.getDate()).padStart(2, '0');
@@ -59,7 +60,7 @@ const ExamEntry = () => {
 	return (
 		<>
 			<div className="titleHead">
-				<h1 className="">Kolehiyo ng Subic</h1>
+				{/* <h1 className="">Kolehiyo ng Subic</h1> */}
 				<p>Entrance Exam</p>
 			</div>
 			<form onSubmit={handleSubmit} className="mainEntry">
