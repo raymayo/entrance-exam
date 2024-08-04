@@ -34,6 +34,14 @@ const ExamEntry = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+
+		const isConfirmed = window.confirm(
+			'Please double check your data before submitting. If everything is good please click OK.'
+		);
+
+		if (!isConfirmed) {
+			return;
+		}
 		// Convert all string values to uppercase
 		const upperCaseFormData = Object.fromEntries(
 			Object.entries(formData).map(([key, value]) =>
@@ -68,9 +76,9 @@ const ExamEntry = () => {
 					<div>
 						<label>Reg. No</label>
 						<input
-							type="number"
+							type="text"
 							name="regNo"
-							placeholder="e.g. 0123-456"
+							placeholder="e.g. 20-4567"
 							value={formData.regNo}
 							onChange={handleChange}
 							required
@@ -163,7 +171,7 @@ const ExamEntry = () => {
 						<input
 							type="text"
 							name="guardianName"
-							placeholder="e.g. Dela Cruz, Juan, M."
+							placeholder="e.g. Juan Dela Cruz"
 							value={formData.guardianName}
 							onChange={handleChange}
 							required
@@ -201,10 +209,15 @@ const ExamEntry = () => {
 							<option value="" disabled>
 								Select Course
 							</option>
-							<option value="Course 1">Course 1</option>
-							<option value="Course 2">Course 2</option>
-							<option value="Course 3">Course 3</option>
-							<option value="Course 4">Course 4</option>
+							<option value="Course 1">BSBA HRM</option>
+							<option value="Course 2">BSBA FM</option>
+							<option value="Course 3">BSA</option>
+							<option value="Course 4">BSCS</option>
+							<option value="Course 4">BSED MATH & FIL</option>
+							<option value="Course 4">BSED SOCSTUD</option>
+							<option value="Course 4">BEED</option>
+							<option value="Course 4">CPE</option>
+							<option value="Course 4">BSHM</option>
 						</select>
 					</div>
 					<div>
@@ -217,11 +230,15 @@ const ExamEntry = () => {
 							<option value="" disabled>
 								Select Course
 							</option>
-							<option value="Course 1">Course 1</option>
-							<option value="Course 2">Course 2</option>
-							<option value="Course 3">Course 3</option>
-							<option value="Course 4">Course 4</option>
-						</select>
+							<option value="Course 1">BSBA HRM</option>
+							<option value="Course 2">BSBA FM</option>
+							<option value="Course 3">BSA</option>
+							<option value="Course 4">BSCS</option>
+							<option value="Course 4">BSED MATH & FIL</option>
+							<option value="Course 4">BSED SOCSTUD</option>
+							<option value="Course 4">BEED</option>
+							<option value="Course 4">CPE</option>
+							<option value="Course 4">BSHM</option>						</select>
 					</div>
 					<div>
 						<label>Course Taken (Transferee Only)</label>

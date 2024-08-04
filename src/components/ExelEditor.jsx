@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import * as XLSX from 'xlsx';
 
 const ExcelEditor = () => {
+	const navigate = useNavigate();
   const [data, setData] = useState(null);
   const [fileName, setFileName] = useState('');
 
@@ -49,26 +51,27 @@ const ExcelEditor = () => {
         // Map formData to specific cells
         
         const cellMapping = {
-          'A2': formData.regNo,
-          'B2': formData.fullName,
-          'C2': formData.Date,
-          'D2': formData.genderSelect,
-          'E2': formData.address,
-          'F2': formData.birthday,
-          'G2': formData.birthplace,
-          'H2': formData.contactNo,
-          'I2': formData.guardianName,
-          'J2': formData.lastSchool,
-          'K2': formData.lastSchoolAddress,
-          'L2': formData.course1st,
-          'M2': formData.course2nd,
-          'N2': formData.transfereeCourse,
-          'O2': formData.math,
-          'P2': formData.english,
-          'Q2': formData.filipino,
-          'R2': formData.science,
-          'S2': formData.math + formData.english + formData.filipino + formData.science
+          'A2': formData.regNo || '',
+          'B2': formData.fullName || '',
+          'C2': formData.Date || '',
+          'D2': formData.genderSelect || '',
+          'E2': formData.address || '',
+          'F2': formData.birthday || '',
+          'G2': formData.birthplace || '',
+          'H2': formData.contactNo || '',
+          'I2': formData.guardianName || '',
+          'J2': formData.lastSchool || '',
+          'K2': formData.lastSchoolAddress || '',
+          'L2': formData.course1st || '',
+          'M2': formData.course2nd || '',
+          'N2': formData.transfereeCourse || '',
+          'O2': formData.math || 0,
+          'P2': formData.english || 0,
+          'Q2': formData.filipino || 0,
+          'R2': formData.science || 0,
+          'S2': (formData.math || 0) + (formData.english || 0) + (formData.filipino || 0) + (formData.science || 0)
         };
+        
 
         // Update cells in the worksheet
         for (const [cell, value] of Object.entries(cellMapping)) {
@@ -92,6 +95,10 @@ const ExcelEditor = () => {
         a.download = `${formData.fullName}_Entrance_Exam.xlsx`;
         a.click();
         URL.revokeObjectURL(url);
+
+          localStorage.clear();
+          console.log('All items cleared');
+          navigate('/');
       } else {
         console.error('No formData found in localStorage');
       }

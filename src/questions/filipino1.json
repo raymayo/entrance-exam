@@ -1,0 +1,14 @@
+{
+  "questions": [
+    {
+      "question": "Who is the national hero of the Philippines?",
+      "options": ["Jose Rizal", "Andres Bonifacio", "Emilio Aguinaldo", "Manuel L. Quezon"],
+      "answer": "Jose Rizal"
+    },
+    {
+      "question": "Which Filipino dish is known for its sour flavor?",
+      "options": ["Adobo", "Sinigang", "Lechon", "Pancit"],
+      "answer": "Sinigang"
+    }
+  ]
+}

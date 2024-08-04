@@ -19,6 +19,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -91,7 +92,7 @@ body::before {
   position: fixed;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(250, 99, 42, .8) 0%, rgba(255, 255, 254, 0) 75%);
+  background: radial-gradient(circle, rgba(250, 99, 42, .8) 0%, rgba(255, 255, 254, 0) 70%);
   bottom: -450px;
   left: 200px;
   z-index: -1;
@@ -101,7 +102,7 @@ body::after {
   content: '';
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(0, 98, 236, .8) 0%, rgba(255, 255, 254, 0) 75%);
+  background: radial-gradient(circle, rgba(0, 98, 236, .8) 0%, rgba(255, 255, 254, 0) 70%);
   position: fixed;
   top: -500px;
   right: 200px;
@@ -113,7 +114,7 @@ body::after {
   position: fixed;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(255, 194, 52, .8) 0%, rgba(255, 255, 254, 0) 75%);
+  background: radial-gradient(circle, rgba(255, 194, 52, .8) 0%, rgba(255, 255, 254, 0) 70%);
   top: -200px;
   left: -450px;
   z-index: -1;
@@ -123,7 +124,7 @@ body::after {
   content: '';
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(19, 191, 147, .8) 0%, rgba(255, 255, 254, 0) 75%);
+  background: radial-gradient(circle, rgba(19, 191, 147, .8) 0%, rgba(255, 255, 254, 0) 70%);
   position: fixed;
   bottom: -350px;
   right: -450px;
@@ -135,7 +136,7 @@ body::after {
   position: fixed;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(255, 194, 52, .8) 0%, rgba(255, 255, 254, 0) 75%);
+  background: radial-gradient(circle, rgba(255, 194, 52, .8) 0%, rgba(255, 255, 254, 0) 70%);
   top: -200px;
   left: -450px;
   z-index: -1;
@@ -145,7 +146,7 @@ body::after {
   content: '';
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(19, 191, 147, .8) 0%, rgba(255, 255, 254, 0) 75%);
+  background: radial-gradient(circle, rgba(19, 191, 147, .8) 0%, rgba(255, 255, 254, 0) 70%);
   position: fixed;
   bottom: -350px;
   right: -250px;
@@ -295,8 +296,6 @@ body::after {
 
 .mainTable {
   width: 60dvw;
-  height: 100%;
-  padding: 1rem;
   border-radius: 2rem;
   color: var(--black);
   background-color: transparent;
@@ -314,6 +313,7 @@ body::after {
 
   .userInfo {
     display: grid;
+    width: 100%;
     color: var(--black);
     outline: var(--black) solid 1px;
     backdrop-filter: blur(14px) saturate(100%);
@@ -321,7 +321,7 @@ body::after {
     background-color: rgba(17, 25, 40, 0.05);
     grid-auto-flow: column;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
     text-align: left;
     border-radius: 1rem;
     padding: 2rem;
@@ -335,10 +335,12 @@ body::after {
       display: block;
       font-size: .9rem;
       color: #000000;
+      font-weight: 400;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      font-weight: 700;
     }
 
     >* {
@@ -352,7 +354,7 @@ body::after {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-
+    /* width: 100%; */
     /* border: solid 1px red; */
 
     div {

@@ -1,0 +1,14 @@
+{
+	"questions": [
+		{
+			"question": "Which of the following is a synonym for 'abundant'?",
+			"options": ["Scarce", "Plentiful", "Sparse", "Rare"],
+			"answer": "Plentiful"
+		},
+		{
+			"question": "Choose the correct form of the verb: She _____ to the store yesterday.",
+			"options": ["Gone", "Went", "Go", "Goes"],
+			"answer": "Went"
+		}
+	]
+}

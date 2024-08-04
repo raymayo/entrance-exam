@@ -19,6 +19,186 @@
           "8"
         ],
         "answer": "5"
+      },
+      {
+        "question": "What is the area of a rectangle with length 8 cm and width 5 cm?",
+        "options": [
+          "35 sq cm",
+          "40 sq cm",
+          "45 sq cm",
+          "50 sq cm"
+        ],
+        "answer": "40 sq cm"
+      },
+      {
+        "question": "Which of the following is a prime number?",
+        "options": [
+          "21",
+          "27",
+          "37",
+          "49"
+        ],
+        "answer": "37"
+      },
+      {
+        "question": "If a triangle has angles 30°, 60°, and 90°, what is the length of the side opposite the 60° angle if the hypotenuse is 10 units?",
+        "options": [
+          "5 units",
+          "5√3 units",
+          "10 units",
+          "10√3 units"
+        ],
+        "answer": "5 units"
+      },
+      {
+        "question": "Simplify: (2x + 3y)(2x - 3y).",
+        "options": [
+          "4x^2 - 9y^2",
+          "4x^2 + 9y^2",
+          "4x^2 - 6xy + 9y^2",
+          "4x^2 - 6xy - 9y^2"
+        ],
+        "answer": "4x^2 - 9y^2"
+      },
+      {
+        "question": "What is the value of log₂(8)?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answer": "3"
+      },
+      {
+        "question": "Find the slope of the line passing through the points (2, 4) and (6, 10).",
+        "options": [
+          "2",
+          "1",
+          "4",
+          "3"
+        ],
+        "answer": "1"
+      },
+      {
+        "question": "If f(x) = 3x² + 2x - 5, find f(-1).",
+        "options": [
+          "-4",
+          "0",
+          "10",
+          "-10"
+        ],
+        "answer": "-4"
+      },
+      {
+        "question": "Which of the following is not a type of triangle?",
+        "options": [
+          "Equilateral triangle",
+          "Isosceles triangle",
+          "Scalene triangle",
+          "Quadrilateral"
+        ],
+        "answer": "Quadrilateral"
+      },
+      {
+        "question": "Simplify: √(25) + √(16).",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "answer": "7"
+      },
+      {
+        "question": "If a = 3 and b = 4, find the value of √(a² + b²).",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "answer": "5"
+      },
+      {
+        "question": "What is the value of 3! (3 factorial)?",
+        "options": [
+          "3",
+          "6",
+          "9",
+          "12"
+        ],
+        "answer": "6"
+      },
+      {
+        "question": "Solve for x: 2x² - 5x + 2 = 0.",
+        "options": [
+          "x = 1, x = 2",
+          "x = -1, x = -2",
+          "x = 1, x = -2",
+          "x = -1, x = 2"
+        ],
+        "answer": "x = 1, x = 2"
+      },
+      {
+        "question": "What is the value of sin(60°)?",
+        "options": [
+          "1/2",
+          "√3/2",
+          "1",
+          "√2/2"
+        ],
+        "answer": "√3/2"
+      },
+      {
+        "question": "Which of the following is a solution to the equation 2x + 3y = 12?",
+        "options": [
+          "(3, 2)",
+          "(4, 3)",
+          "(5, 1)",
+          "(6, 0)"
+        ],
+        "answer": "(3, 2)"
+      },
+      {
+        "question": "Find the perimeter of a triangle with sides 8 cm, 10 cm, and 12 cm.",
+        "options": [
+          "24 cm",
+          "30 cm",
+          "32 cm",
+          "36 cm"
+        ],
+        "answer": "30 cm"
+      },
+      {
+        "question": "What is the next number in the sequence: 1, 1, 2, 3, 5, 8, ...?",
+        "options": [
+          "10",
+          "11",
+          "12",
+          "13"
+        ],
+        "answer": "13"
+      },
+      {
+        "question": "Solve for x: log₄(x) = 2.",
+        "options": [
+          "x = 8",
+          "x = 4",
+          "x = 2",
+          "x = 1"
+        ],
+        "answer": "x = 16"
+      },
+      {
+        "question": "What is the volume of a cube with side length 3 cm?",
+        "options": [
+          "9 cubic cm",
+          "18 cubic cm",
+          "27 cubic cm",
+          "36 cubic cm"
+        ],
+        "answer": "27 cubic cm"
       }
     ]
   }

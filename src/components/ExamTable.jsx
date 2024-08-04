@@ -102,25 +102,25 @@ const ExamTable = () => {
 			</div>
 			<div className="examLinks">
 				<div className='math'>
-					<BiMath size={50} />
+					<BiMath size={100} />
 					<h1>Math Exam</h1>
 					{scores.math !== null && <p>Score: {scores.math}</p>}
 					<Link to="/exams/math">Take Exam</Link>
 				</div>
 				<div className='eng'>
-					<TbMessageLanguage size={50} />
+					<TbMessageLanguage size={100} />
 					<h1>English Exam</h1>
 					{scores.english !== null && <p>Score: {scores.english}</p>}
 					<Link to="/exams/english">Take Exam</Link>
 				</div>
 				<div className='fil'>
-					<PiSunHorizonFill size={50} />
+					<PiSunHorizonFill size={100} />
 					<h1>Filipino Exam</h1>
 					{scores.filipino !== null && <p> Score: {scores.filipino}</p>}
 					<Link to="/exams/filipino">Take Exam</Link>
 				</div>
 				<div className='sci'>
-					<BiAtom size={50} />
+					<BiAtom size={100} />
 					<h1>Science Exam</h1>
 					{scores.science !== null && <p>Score: {scores.science}</p>}
 					<Link to="/exams/science">Take Exam</Link>

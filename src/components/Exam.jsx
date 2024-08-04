@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -93,7 +95,7 @@ const Exam = () => {
 
   return (
     <div className='examBox'>
-      <h2>{examName} Questions</h2>
+      <h2>{examName.charAt(0).toUpperCase() + examName.slice(1)} Questions</h2>
       <ol className='questionContainer'>
         {questions.map((question, index) => (
           <li key={index} className='questionBox'>

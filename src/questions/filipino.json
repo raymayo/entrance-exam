@@ -3,12 +3,102 @@
     {
       "question": "Who is the national hero of the Philippines?",
       "options": ["Jose Rizal", "Andres Bonifacio", "Emilio Aguinaldo", "Manuel L. Quezon"],
-      "answer": "Jose Rizal"
+      "correct_answer": "Jose Rizal"
     },
     {
       "question": "Which Filipino dish is known for its sour flavor?",
       "options": ["Adobo", "Sinigang", "Lechon", "Pancit"],
-      "answer": "Sinigang"
+      "correct_answer": "Sinigang"
+    },
+    {
+      "question": "What is the capital city of the Philippines?",
+      "options": ["Manila", "Cebu", "Davao", "Quezon City"],
+      "correct_answer": "Manila"
+    },
+    {
+      "question": "Who wrote the Philippine national anthem?",
+      "options": ["Jose Rizal", "Andres Bonifacio", "Emilio Aguinaldo", "Julian Felipe"],
+      "correct_answer": "Julian Felipe"
+    },
+    {
+      "question": "Which Philippine president declared martial law in 1972?",
+      "options": ["Ferdinand Marcos", "Corazon Aquino", "Joseph Estrada", "Gloria Macapagal-Arroyo"],
+      "correct_answer": "Ferdinand Marcos"
+    },
+    {
+      "question": "What is the traditional Filipino martial art?",
+      "options": ["Kali", "Judo", "Taekwondo", "Karate"],
+      "correct_answer": "Kali"
+    },
+    {
+      "question": "Who is the current president of the Philippines as of 2024?",
+      "options": ["Rodrigo Duterte", "Benigno Aquino III", "Ferdinand Marcos Jr.", "Leni Robredo"],
+      "correct_answer": "Ferdinand Marcos Jr."
+    },
+    {
+      "question": "What is the largest religious group in the Philippines?",
+      "options": ["Roman Catholic", "Iglesia ni Cristo", "Muslim", "Protestant"],
+      "correct_answer": "Roman Catholic"
+    },
+    {
+      "question": "What is the traditional Filipino house called?",
+      "options": ["Bahay kubo", "Balay", "Kubo", "Tahanan"],
+      "correct_answer": "Bahay kubo"
+    },
+    {
+      "question": "Which Philippine festival is known for its colorful street dances?",
+      "options": ["Sinulog Festival", "Pahiyas Festival", "Ati-Atihan Festival", "Panagbenga Festival"],
+      "correct_answer": "Sinulog Festival"
+    },
+    {
+      "question": "Who is the first female president of the Philippines?",
+      "options": ["Gloria Macapagal-Arroyo", "Corazon Aquino", "Imelda Marcos", "Miriam Defensor-Santiago"],
+      "correct_answer": "Corazon Aquino"
+    },
+    {
+      "question": "What is the traditional Filipino dance performed at celebrations?",
+      "options": ["Tinikling", "Pandanggo sa Ilaw", "Maglalatik", "Sayaw sa Bangko"],
+      "correct_answer": "Tinikling"
+    },
+    {
+      "question": "Which Philippine province is known for its chocolate hills?",
+      "options": ["Bohol", "Negros Oriental", "Iloilo", "Cebu"],
+      "correct_answer": "Bohol"
+    },
+    {
+      "question": "What is the name of the Filipino mythical bird?",
+      "options": ["Sarimanok", "Tikbalang", "Bakunawa", "Ibong Adarna"],
+      "correct_answer": "Ibong Adarna"
+    },
+    {
+      "question": "What is the national language of the Philippines?",
+      "options": ["Filipino", "English", "Spanish", "Tagalog"],
+      "correct_answer": "Filipino"
+    },
+    {
+      "question": "Who was the first Filipino to win the Nobel Prize?",
+      "options": ["Jose Rizal", "Lea Salonga", "Carlos P. Romulo", "F. Sionil Jose"],
+      "correct_answer": "Carlos P. Romulo"
+    },
+    {
+      "question": "What is the traditional Filipino method of preserving meat by drying?",
+      "options": ["Tocino", "Adobo", "Tapa", "Tinapa"],
+      "correct_answer": "Tapa"
+    },
+    {
+      "question": "What is the name of the traditional Filipino boat?",
+      "options": ["Bangka", "Junk", "Vinta", "Balangay"],
+      "correct_answer": "Balangay"
+    },
+    {
+      "question": "Who is the Filipino boxer known as 'Pambansang Kamao'?",
+      "options": ["Manny Pacquiao", "Nonito Donaire", "Gerry Peñalosa", "Luisito Espinosa"],
+      "correct_answer": "Manny Pacquiao"
+    },
+    {
+      "question": "What is the traditional Filipino snack made from glutinous rice?",
+      "options": ["Puto", "Kutsinta", "Bibingka", "Suman"],
+      "correct_answer": "Suman"
     }
   ]
 }
