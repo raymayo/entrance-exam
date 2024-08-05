@@ -215,15 +215,15 @@ const ExamEntry = () => {
 							<option value="" disabled>
 								Select Course
 							</option>
-							<option value="Course 1">BSBA HRM</option>
-							<option value="Course 2">BSBA FM</option>
-							<option value="Course 3">BSA</option>
-							<option value="Course 4">BSCS</option>
-							<option value="Course 4">BSED MATH & FIL</option>
-							<option value="Course 4">BSED SOCSTUD</option>
-							<option value="Course 4">BEED</option>
-							<option value="Course 4">CPE</option>
-							<option value="Course 4">BSHM</option>
+							<option value="BSBA HRM">BSBA HRM</option>
+							<option value="BSBA FM">BSBA FM</option>
+							<option value="BSA">BSA</option>
+							<option value="BSCS">BSCS</option>
+							<option value="BSED MATH & FIL">BSED MATH & FIL</option>
+							<option value="BSED SOCSTUD">BSED SOCSTUD</option>
+							<option value="BEED">BEED</option>
+							<option value="CPE">CPE</option>
+							<option value="BSHM">BSHM</option>
 						</select>
 					</div>
 					<div>
@@ -236,15 +236,15 @@ const ExamEntry = () => {
 							<option value="" disabled>
 								Select Course
 							</option>
-							<option value="Course 1">BSBA HRM</option>
-							<option value="Course 2">BSBA FM</option>
-							<option value="Course 3">BSA</option>
-							<option value="Course 4">BSCS</option>
-							<option value="Course 4">BSED MATH & FIL</option>
-							<option value="Course 4">BSED SOCSTUD</option>
-							<option value="Course 4">BEED</option>
-							<option value="Course 4">CPE</option>
-							<option value="Course 4">BSHM</option>						</select>
+							<option value="BSBA HRM">BSBA HRM</option>
+							<option value="BSBA FM">BSBA FM</option>
+							<option value="BSA">BSA</option>
+							<option value="BSCS">BSCS</option>
+							<option value="BSED MATH & FIL">BSED MATH & FIL</option>
+							<option value="BSED SOCSTUD">BSED SOCSTUD</option>
+							<option value="BEED">BEED</option>
+							<option value="CPE">CPE</option>
+							<option value="BSHM">BSHM</option>					</select>
 					</div>
 					<div>
 						<label>Course Taken (Transferee Only)</label>

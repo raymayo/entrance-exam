@@ -464,3 +464,162 @@ body::after {
   background-color: var(--black);
 }
 
+
+#printContainer{
+  border: solid 1px red;
+  max-width: 700.8px;
+  min-width: 700.8px;
+  max-height: 1027.2px;
+  min-height: 1027.2px;
+  background-color: white;
+  color: var(--black);
+  padding: 1.5rem;
+  
+  p{
+    font-size: 11pt;
+  }
+
+  h3{
+    font-weight: 500;
+    /* font-size: 1rem; */
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#headerTitle{
+  /* border: solid 1px red; */
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  h1{
+    font-size: 24pt;
+    font-weight: 500;
+    /* border: solid 1px blue; */
+    margin: 0;
+    color: var(--black);
+  }
+
+
+}
+
+#schoolLogo{
+  height: 100%;
+  object-fit:contain;
+}
+
+#infoContainer{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  text-align: left;
+  *{
+    /* border: solid 1px red; */
+  }
+
+  #name{
+    grid-column: 1/4;
+  }
+  #address{
+    grid-column: 1/5;
+  }
+
+  #birthday{
+    grid-column: 1/2;
+  }
+  #birthplace{
+    grid-column: 2/5;
+  }
+
+  #contactNum{
+    grid-column: 1/2;
+  }
+
+  #guardian{
+    grid-column: 2/5;
+  }
+
+  #schoolLastAdd, #courseTaken, #schoolLast{
+    grid-column: 1/5;
+  }
+
+  #courseInfo{
+    grid-column: 1/5;
+  }
+
+  #courseOne, #courseTwo{
+    grid-column: 2/5;
+  }
+  
+
+}
+
+#reqBox{
+  /* border: solid 1px red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  border-bottom: dashed 1px black;
+  padding: 1rem;
+  /* *{border: solid 1px red;} */
+
+  .reqList{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+  }
+
+
+
+}
+
+.namePlate::after{
+  content: '';
+  width: 100%;
+  border-bottom: solid 1px var(--black);
+  display: block;
+  text-align: center;
+  
+}
+
+.letterScore{
+
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  #date{text-align: right;
+  grid-column: 2/4;}
+
+
+  #letter1{
+    grid-column: 1/4;
+  }
+
+  .nameSig{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+  .nameSig{
+    grid-column: 2/4;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+

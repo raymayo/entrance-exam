@@ -98,9 +98,9 @@ const ExcelEditor = () => {
         a.click();
         URL.revokeObjectURL(url);
 
-          localStorage.clear();
-          console.log('All items cleared');
-          navigate('/');
+          // localStorage.clear();
+          // console.log('All items cleared');
+          // navigate('/');
       } else {
         console.error('No formData found in localStorage');
       }
