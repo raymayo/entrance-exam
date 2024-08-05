@@ -60,10 +60,15 @@ const ExamEntry = () => {
 	};
 
 	function formatDate(date) {
+		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+	
+		const dayOfWeek = days[date.getDay()];
 		const day = String(date.getDate()).padStart(2, '0');
-		const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+		const month = months[date.getMonth()]; // Months are zero-based
 		const year = date.getFullYear();
-		return `${month}/${day}/${year}`; // Customize the format as needed
+	
+		return `${dayOfWeek}, ${month} ${day} ${year}`;
 	}
 
 	return (

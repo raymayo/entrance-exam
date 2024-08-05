@@ -51,7 +51,7 @@ const ExcelEditor = () => {
         // Map formData to specific cells
         
         const cellMapping = {
-          'A2': formData.regNo || '',
+          // 'A2': formData.regNo || '',
           'B2': formData.fullName || '',
           'C2': formData.Date || '',
           'D2': formData.genderSelect || '',
