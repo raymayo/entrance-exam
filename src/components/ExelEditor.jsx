@@ -27,7 +27,7 @@ const ExcelEditor = () => {
 
   // Fetch the file when the component mounts
   useEffect(() => {
-    const fileUrl = '/test.xlsx'; // Replace with the actual URL
+    const fileUrl = '/document.xlsx'; // Replace with the actual URL
     fetchFile(fileUrl);
   }, []);
 
@@ -52,24 +52,26 @@ const ExcelEditor = () => {
         
         const cellMapping = {
           // 'A2': formData.regNo || '',
-          'B2': formData.fullName || '',
-          'C2': formData.Date || '',
-          'D2': formData.genderSelect || '',
-          'E2': formData.address || '',
-          'F2': formData.birthday || '',
-          'G2': formData.birthplace || '',
-          'H2': formData.contactNo || '',
-          'I2': formData.guardianName || '',
-          'J2': formData.lastSchool || '',
-          'K2': formData.lastSchoolAddress || '',
-          'L2': formData.course1st || '',
-          'M2': formData.course2nd || '',
-          'N2': formData.transfereeCourse || '',
-          'O2': formData.math || 0,
-          'P2': formData.english || 0,
-          'Q2': formData.filipino || 0,
-          'R2': formData.science || 0,
-          'S2': (formData.math || 0) + (formData.english || 0) + (formData.filipino || 0) + (formData.science || 0)
+          'B8': formData.fullName || '',
+          'J8': formData.genderSelect || '',
+          'B9': formData.address || '',
+          'C10': formData.birthday || '',
+          'G10': formData.birthplace || '',
+          'C11': formData.contactNo || '',
+          'G11': formData.guardianName || '',
+          'D12': formData.lastSchool || '',
+          'D13': formData.lastSchoolAddress || '',
+          'E14': formData.transfereeCourse || '',
+          'E15': formData.course1st || '',
+          'E17': formData.course2nd || '',
+          'I32': formData.Date || '',
+          'C34': formData.fullName || '',
+          'A35': formData.Date || '',
+          'A43': formData.english || 0,
+          'A44': formData.math || 0,
+          'A45': formData.filipino || 0,
+          'D43': formData.science || 0,
+          'F46': (formData.math || 0) + (formData.english || 0) + (formData.filipino || 0) + (formData.science || 0)
         };
         
 
