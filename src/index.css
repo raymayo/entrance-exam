@@ -466,14 +466,25 @@ body::after {
 
 
 #printContainer{
-  border: solid 1px red;
-  max-width: 700.8px;
+  /* border: solid 1px red; */
+  /* max-width: 700.8px;
   min-width: 700.8px;
   max-height: 1027.2px;
-  min-height: 1027.2px;
+  min-height: 1027.2px; */
   background-color: white;
   color: var(--black);
+  display: grid;
   padding: 1.5rem;
+  *{}
+
+  >*{
+    /* border: solid 1px red; */
+  }
+
+  span{
+    font-weight: 600;
+    text-decoration: underline;
+  }
   
   p{
     font-size: 11pt;
@@ -481,7 +492,7 @@ body::after {
 
   h3{
     font-weight: 500;
-    /* font-size: 1rem; */
+    font-size: 1rem;
   }
 
   *{
@@ -492,14 +503,15 @@ body::after {
 
 #headerTitle{
   /* border: solid 1px red; */
-  height: 3rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: -.5rem;
 
   h1{
-    font-size: 24pt;
+    font-size: 30pt;
     font-weight: 500;
     /* border: solid 1px blue; */
     margin: 0;
@@ -507,6 +519,16 @@ body::after {
   }
 
 
+}
+
+img{
+  padding-right: .5rem !important;
+  vertical-align: middle;
+  width: 15%;
+}
+.regTitle{
+  padding: .5rem 0 !important;
+  font-weight: 600;
 }
 
 #schoolLogo{
@@ -518,6 +540,8 @@ body::after {
   display: grid;
   grid-template-columns: repeat(4,auto);
   text-align: left;
+
+  
   *{
     /* border: solid 1px red; */
   }
@@ -554,6 +578,7 @@ body::after {
 
   #courseOne, #courseTwo{
     grid-column: 2/5;
+    margin-left: -10rem;
   }
   
 
@@ -562,17 +587,33 @@ body::after {
 #reqBox{
   /* border: solid 1px red; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
   gap: 1rem;
+  padding: 1rem 0;
   border-bottom: dashed 1px black;
-  padding: 1rem;
+  margin-bottom: 1rem;
+  /* padding: 1rem; */
   /* *{border: solid 1px red;} */
+  /* border: solid 1px red; */
+  
 
   .reqList{
     text-align: left;
     display: flex;
     flex-direction: column;
     /* gap: 1rem; */
+  }
+
+  .nameSig{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nameSig{
+    grid-column: 2/4;
+    text-align: center;
   }
 
 
@@ -588,15 +629,24 @@ body::after {
   
 }
 
-.letterScore{
+h4{
+  text-align: left;
+  /* padding-top: 1rem; */
+}
 
+.letterScore{
   text-align: left;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+
   #date{text-align: right;
   grid-column: 2/4;}
 
+  span{
+    font-style: italic;
+    font-weight: 700 !important;
+  }
 
   #letter1{
     grid-column: 1/4;
@@ -608,14 +658,48 @@ body::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
   }
   .nameSig{
     grid-column: 2/4;
     text-align: center;
   }
 }
+
+#examResult{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  text-align: left;
+
+  .nameSig{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sig{
+   width: 14rem;
+   
+  }
+
+  .sigBox{
+    margin: 1.5rem;
+  }
+  p{
+    grid-column: 1/3;
+  }
+
+  .sirPabs{
+    grid-column: 1/2;
+  }
+
+}
+
+.namePlate{
+  font-weight: 600;
+}
+
 
 
 
