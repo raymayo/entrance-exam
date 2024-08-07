@@ -1,36 +1,46 @@
+/* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import React, { useRef } from 'react';
+import html2pdf from 'html2pdf.js';
 import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+import { MdFileDownload } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
+
 
 const Print = () => {
 
-    const printRef = useRef();
+    const contentRef = useRef();
+	const navigate = useNavigate();
 
-    const handleDownloadPdf = async () => {
-      const element = printRef.current;
-      const canvas = await html2canvas(element);
-      const data = canvas.toDataURL('image/png');
-  
-      const pdf = new jsPDF();
-      const imgProps = pdf.getImageProperties(data);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-  
-      pdf.addImage(data, 'PNG', 0, 0, pdfWidth, pdfHeight);
-      pdf.save('download.pdf');
-    };
 	const userData = JSON.parse(localStorage.getItem('userData')) || {};
-
 	console.log(userData);
+
+    const generatePdf = () =>{
+    const element = contentRef.current;
+
+    const options = {
+        margin:0,
+        filename:`${userData.fullName}_Entrance_Exam.pdf`,
+        image:{type:'png',quality:1.0},
+        html2canvas:{scale:3,useCORS:true},
+        jsPDF:{unit:'in', format:'a4', orientation:'portrait'}
+    }
+
+    html2pdf().set(options).from(element).save();
+
+            localStorage.clear();
+          console.log('All items cleared');
+          navigate('/');
+    }
+
 	return (
         <>
-		<div id="printContainer" ref={printRef}>
+		<div id="printContainer" ref={contentRef}>
 			<div id="headerTitle">
 				<h1><img src="/images.jfif" id="schoolLogo" />Kolehiyo Ng Subic</h1>
-			</div>
             <h3>Subic, Zambales</h3>
                 <h2 className='regTitle'>REGISTRATION FORM</h2>
+			</div>
                 <div id="infoContainer">
                     <p id='name'>Name: <span>{userData.fullName}</span></p>
                     <p id='sex'>Sex: <span>{userData.genderSelect}</span></p>
@@ -50,23 +60,23 @@ const Print = () => {
                     <div id="year1">
                         <h3>INCOMING FIRST YEAR</h3>
                         <div className="reqList">
-                            <p>() High School Card Form 138</p>
-                            <p>() Certificate of Good Moral Character</p>
-                            <p>() Barangay Certificate oF Residency</p>
-                            <p>() Two (2) 2X2 Colored Pictures</p>
-                            <p>() PSA Certified Birth Certificate(1 Original & 1 Photocopy)</p>
-                            <p>() Two (2) 2X2 Long Brown Envelope</p>
+                            <p>( ) High School Card Form 138</p>
+                            <p>( ) Certificate of Good Moral Character</p>
+                            <p>( ) Barangay Certificate oF Residency</p>
+                            <p>( ) Two (2) 2X2 Colored Pictures</p>
+                            <p>( ) PSA Certified Birth Certificate(1 Original & 1 Photocopy)</p>
+                            <p>( ) Two (2) 2X2 Long Brown Envelope</p>
                         </div>
                     </div>
                     <div id="transf">
                         <h3>FOR TRANSFEREE</h3>
                         <div className="reqList">
-                            <p>() Transcript of record/ Certificate of Grade</p>
-                            <p>() Honorable Dismissal</p>
-                            <p>() Barangay Certificate of Residency</p>
-                            <p>() Two (2) 2x2 Colored Picture</p>
-                            <p>() PSA Certified Birth Certificate(1 Original & 1 Photocopy)</p>
-                            <p>() Two (2) 2X2 Long Brown Envelope</p>
+                            <p>( ) Transcript of record/ Certificate of Grade</p>
+                            <p>( ) Honorable Dismissal</p>
+                            <p>( ) Barangay Certificate of Residency</p>
+                            <p>( ) Two (2) 2x2 Colored Picture</p>
+                            <p>( ) PSA Certified Birth Certificate(1 Original & 1 Photocopy)</p>
+                            <p>( ) Two (2) 2X2 Long Brown Envelope</p>
                         </div>
                     </div>
                     <div className="nameSig">
@@ -87,14 +97,14 @@ const Print = () => {
                 <h4>Entrance Examination Result</h4>
             <div id="examResult">
                 <div>
-                    <p>0 English</p>
-                    <p>0 Mathematics</p>
-                    <p>0 Filipino</p>
+                    <p><span>{userData.english || 'No Score'}</span> English</p>
+                    <p><span>{userData.math || 'No Score'}</span> Mathematics</p>
+                    <p><span>{userData.filipino || 'No Score'}</span> Filipino</p>
                 </div>
                 <div>
-                    <p>0 Science</p>
+                    <p><span>{userData.science || 'No Score'}</span> Science</p>
                     <p>0 Social Studies</p>
-                    <h4>TOTAL SCORE: 0</h4>
+                    <h4>TOTAL SCORE: <span>{userData.english + userData.math + userData.filipino + userData.science || 'No Score'}</span></h4>
                 </div>
                 <div className="nameSig sigBox">
                     <p className="namePlate sig"></p>
@@ -107,7 +117,8 @@ const Print = () => {
                 </div>
             </div>
 		</div>
-        {/* <button onClick={handleDownloadPdf}>Download as PDF</button> */}
+        <button id='pdf' onClick={generatePdf}><MdFileDownload onClick={generatePdf} size={25}/>Download</button>
+        
         </>
 	);
 };

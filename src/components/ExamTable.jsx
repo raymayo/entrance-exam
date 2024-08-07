@@ -126,7 +126,7 @@ const ExamTable = () => {
 					<Link to="/exams/science">Take Exam</Link>
 				</div>
 			</div>
-			<ExelEditor/>
+			<Link to='/print' id='submitExam'>Submit Data & Scores</Link>
 		</div>
 	);
 };

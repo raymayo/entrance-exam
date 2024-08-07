@@ -1,3 +1,55 @@
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova-Semibold.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova-Bold.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova-Extrabld.woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova-RegularIt.woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova-SemiboldIt.woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova-BoldIt.woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'proxima';
+  src: url('./fonts/ProximaNova-ExtrabldIt.woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,7 +76,7 @@
 } */
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'proxima';
   box-sizing: border-box;
 }
 
@@ -505,10 +557,10 @@ body::after {
   /* border: solid 1px red; */
   height: 5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: -.5rem;
+  margin: 1rem 0 2rem 0;
 
   h1{
     font-size: 30pt;
@@ -516,6 +568,10 @@ body::after {
     /* border: solid 1px blue; */
     margin: 0;
     color: var(--black);
+  }
+
+  h3{
+    margin-top: -1rem;
   }
 
 
@@ -641,6 +697,7 @@ h4{
 
 
   #date{text-align: right;
+    margin-bottom: 2rem;
   grid-column: 2/4;}
 
   span{
@@ -698,6 +755,33 @@ h4{
 
 .namePlate{
   font-weight: 600;
+}
+
+#pdf{
+  /* background-color: var(--black); */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: #FFF;
+  border-radius: .5rem;
+  background-color: black;
+}
+
+#submitExam{
+  
+    background: var(--black);
+    font-size: 1rem;
+    padding: .5rem;
+    margin: 0;
+    color: #FFFFFE;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
