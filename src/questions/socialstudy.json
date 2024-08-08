@@ -1,0 +1,109 @@
+{
+    "questions":[
+    {
+        "question": "What year did the Philippines gain independence from Spanish rule?",
+        "options": ["1898", "1901", "1946", "1965"],
+        "answer": "1898"
+    },
+    {
+        "question": "Who was the first President of the Philippines?",
+        "options": ["Manuel L. Quezon", "Ferdinand Marcos", "Emilio Aguinaldo", "Benigno Aquino III"],
+        "answer": "Emilio Aguinaldo"
+    },
+    {
+        "question": "What is the capital city of the Philippines?",
+        "options": ["Manila", "Quezon City", "Cebu City", "Davao City"],
+        "answer": "Manila"
+    },
+    {
+        "question": "Which of the following is not a primary source of Philippine history?",
+        "options": ["Historical documents", "Artifacts", "Textbooks", "Oral testimonies"],
+        "answer": "Textbooks"
+    },
+    {
+        "question": "The 1987 Philippine Constitution was enacted during which president's term?",
+        "options": ["Ferdinand Marcos", "Corazon Aquino", "Joseph Estrada", "Gloria Macapagal-Arroyo"],
+        "answer": "Corazon Aquino"
+    },
+    {
+        "question": "Which of the following islands is not part of the Philippines?",
+        "options": ["Luzon", "Mindanao", "Borneo", "Visayas"],
+        "answer": "Borneo"
+    },
+    {
+        "question": "What event is commemorated on June 12 in the Philippines?",
+        "options": ["Independence Day", "Araw ng Kagitingan", "Bonifacio Day", "Eid al-Fitr"],
+        "answer": "Independence Day"
+    },
+    {
+        "question": "Who is known as the 'Father of Philippine Revolution'?",
+        "options": ["Andres Bonifacio", "Jose Rizal", "Apolinario Mabini", "Emilio Aguinaldo"],
+        "answer": "Andres Bonifacio"
+    },
+    {
+        "question": "What was the primary purpose of the American colonial government in establishing public education in the Philippines?",
+        "options": ["To promote nationalism", "To improve economic conditions", "To educate Filipinos about American culture", "To create a skilled workforce"],
+        "answer": "To educate Filipinos about American culture"
+    },
+    {
+        "question": "What is the official national language of the Philippines?",
+        "options": ["Filipino", "Cebuano", "Hiligaynon", "Ilocano"],
+        "answer": "Filipino"
+    },
+    {
+        "question": "Which historical figure is associated with the Malolos Congress?",
+        "options": ["Emilio Aguinaldo", "Andres Bonifacio", "Sergio Osmeña", "Pedro Paterno"],
+        "answer": "Pedro Paterno"
+    },
+    {
+        "question": "In which war did the Philippines fight alongside the United States?",
+        "options": ["Spanish-American War", "World War I", "World War II", "Vietnam War"],
+        "answer": "World War II"
+    },
+    {
+        "question": "What is the main focus of the 'Tarlac Declaration'?",
+        "options": ["Economic reforms", "Political unity", "Educational improvements", "Land distribution"],
+        "answer": "Political unity"
+    },
+    {
+        "question": "Which Filipino leader was known for the 'People Power' revolution?",
+        "options": ["Ferdinand Marcos", "Corazon Aquino", "Rodrigo Duterte", "Benigno Aquino III"],
+        "answer": "Corazon Aquino"
+    },
+    {
+        "question": "What was the main outcome of the Treaty of Paris of 1898?",
+        "options": ["End of World War I", "Philippine independence", "U.S. acquisition of the Philippines", "Spanish colonization of the Philippines"],
+        "answer": "U.S. acquisition of the Philippines"
+    },
+    {
+        "question": "What is the significance of 'Araw ng Kagitingan' in Philippine history?",
+        "options": ["Celebrates independence from Spain", "Honors Filipino veterans of World War II", "Commemorates the first Filipino Republic", "Marks the end of American rule"],
+        "answer": "Honors Filipino veterans of World War II"
+    },
+    {
+        "question": "Which island group in the Philippines is known for its beautiful beaches and diving spots?",
+        "options": ["Luzon", "Visayas", "Mindanao", "Palawan"],
+        "answer": "Palawan"
+    },
+    {
+        "question": "What is the highest mountain in the Philippines?",
+        "options": ["Mount Apo", "Mount Pulag", "Mount Kitanglad", "Mount Banahaw"],
+        "answer": "Mount Apo"
+    },
+    {
+        "question": "Which Filipino president was known for the declaration of Martial Law?",
+        "options": ["Carlos P. Garcia", "Ferdinand Marcos", "Corazon Aquino", "Benigno Aquino III"],
+        "answer": "Ferdinand Marcos"
+    },
+    {
+        "question": "What is the traditional Filipino martial art known for its use of sticks and bladed weapons?",
+        "options": ["Arnis", "Taekwondo", "Karate", "Judo"],
+        "answer": "Arnis"
+    },
+    {
+        "question": "Which of the following is a primary economic sector in the Philippines?",
+        "options": ["Mining", "Tourism", "Agriculture", "Finance"],
+        "answer": "Agriculture"
+    }
+]
+}

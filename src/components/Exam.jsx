@@ -2,6 +2,8 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 
 const Exam = () => {
   const { examName } = useParams();
@@ -33,6 +35,7 @@ const Exam = () => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
+          console.log(response)
           const data = await response.json();
 
           // Shuffle questions and options
@@ -99,10 +102,10 @@ const Exam = () => {
       <ol className='questionContainer'>
         {questions.map((question, index) => (
           <li key={index} className='questionBox'>
-            <h3>{question.question}</h3>
+            <p>{index + 1}. {question.question}</p>
             <ul>
               {question.options.map((option, idx) => (
-                <li key={idx}>
+                <motion.li key={idx} className='option-hover' whileHover={{backgroundColor:'rgba(17, 25, 40, 0.3)'}} whileTap={{scale:.95}}>
                   <label>
                     <input
                       type="radio"
@@ -111,15 +114,15 @@ const Exam = () => {
                       checked={answers[index] === option}
                       onChange={() => handleAnswerSelect(index, option)}
                     />
-                    {option}
+                    <span> </span>{option}
                   </label>
-                </li>
+                </motion.li>
               ))}
             </ul>
           </li>
         ))}
+      <button className='submitExam' onClick={handleSubmit}>Submit Answers</button>
       </ol>
-      <button onClick={handleSubmit}>Submit Answers</button>
     </div>
   );
 };

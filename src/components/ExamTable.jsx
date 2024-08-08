@@ -5,7 +5,10 @@ import { BiMath } from 'react-icons/bi';
 import { BiAtom } from "react-icons/bi";
 import { TbMessageLanguage } from "react-icons/tb";
 import { PiSunHorizonFill } from "react-icons/pi";
+import { FaPeopleGroup } from "react-icons/fa6";
 import ExelEditor from './ExelEditor'
+import { motion } from 'framer-motion';
+
 
 const ExamTable = () => {
 	const [scores, setScores] = useState({
@@ -13,6 +16,7 @@ const ExamTable = () => {
 		english: null,
 		filipino: null,
 		science: null,
+		socialstudy: null,
 	});
 
 	useEffect(() => {
@@ -37,6 +41,7 @@ const ExamTable = () => {
 			english: getScore('english'),
 			filipino: getScore('filipino'),
 			science: getScore('science'),
+			socialstudy: getScore('socialstudy')
 		});
 
     
@@ -46,6 +51,14 @@ const ExamTable = () => {
 	const userData = JSON.parse(localStorage.getItem('userData')) || {};
 
 	console.log(userData);
+
+	const confirm = () =>{
+		const isConfirmed = window.confirm('Are you sure you want to submit your data and scores?');
+
+		if (!isConfirmed) {
+		return;
+		}
+	}
 
 
 
@@ -102,31 +115,37 @@ const ExamTable = () => {
 			</div>
 			<div className="examLinks">
 				<div className='math'>
-					<BiMath size={100} />
+					<BiMath size={50} />
 					<h1>Math Exam</h1>
 					{scores.math !== null && <p>Score: {scores.math}</p>}
-					<Link to="/exams/math">Take Exam</Link>
+					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/math">Take Exam</Link></motion.span>
 				</div>
 				<div className='eng'>
-					<TbMessageLanguage size={100} />
+					<TbMessageLanguage size={50} />
 					<h1>English Exam</h1>
 					{scores.english !== null && <p>Score: {scores.english}</p>}
-					<Link to="/exams/english">Take Exam</Link>
+					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/english">Take Exam</Link></motion.span>
 				</div>
 				<div className='fil'>
-					<PiSunHorizonFill size={100} />
+					<PiSunHorizonFill size={50} />
 					<h1>Filipino Exam</h1>
 					{scores.filipino !== null && <p> Score: {scores.filipino}</p>}
-					<Link to="/exams/filipino">Take Exam</Link>
+					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/filipino">Take Exam</Link></motion.span>
 				</div>
 				<div className='sci'>
-					<BiAtom size={100} />
-					<h1>Science Exam</h1>
+					<BiAtom size={50} />
+					<h1>Sciesnce Exam</h1>
 					{scores.science !== null && <p>Score: {scores.science}</p>}
-					<Link to="/exams/science">Take Exam</Link>
+					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/science">Take Exam</Link></motion.span>
+				</div>
+				<div className='sci'>
+					<FaPeopleGroup size={50} />
+					<h1>Science Exam</h1>
+					{scores.socialstudy !== null && <p>Score: {scores.socialstudy}</p>}
+					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/socialstudy">Take Exam</Link></motion.span>
 				</div>
 			</div>
-			<Link to='/print' id='submitExam'>Submit Data & Scores</Link>
+			<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to='/print' id='submitExam' onClick={confirm} >Submit Data & Scores</Link></motion.span>
 		</div>
 	);
 };
