@@ -145,7 +145,7 @@ const ExamTable = () => {
 					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/socialstudy">Take Exam</Link></motion.span>
 				</div>
 			</div>
-			<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to='/print' id='submitExam' onClick={confirm} >Submit Data & Scores</Link></motion.span>
+			<motion.span whileHover={{scale:1.03}} whileTap={{scale:1}}><Link to='/print' id='submitExam' onClick={confirm} >Submit Data & Scores</Link></motion.span>
 		</div>
 	);
 };

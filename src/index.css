@@ -166,7 +166,7 @@ body {
   position: fixed;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgb(248, 118, 3) 0%, rgba(250,99,42,0) 70%);
+  background: radial-gradient(circle, rgb(248, 3, 3) 0%, rgba(250,99,42,0) 70%);
   bottom: -450px;
   left: 200px;
   z-index: -1;
@@ -500,6 +500,11 @@ body {
     }
   }
 
+  h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
   .questionContainer {
     width: 60%;
     display: flex;
@@ -573,7 +578,8 @@ body {
   .submitExam{
     width: 100%;
     /* margin: 2rem 0; */
-    margin-top: 2rem;
+    margin-top:1rem;
+    margin-bottom: 2rem;
     background-color: var(--black);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   /* border: solid 1px red; */
