@@ -64,8 +64,9 @@ const ExamTable = () => {
 
 	return (
 		<div className="mainTable">
-			<h2>Student Info & Exam Table</h2>
+			{/* <h2>Student Info & Exam Table</h2> */}
 			<div className="userInfo">
+				<h1>Student Information</h1>
 				<p>
 					<span>Register No:</span> {userData.regNo}
 				</p>
@@ -74,9 +75,6 @@ const ExamTable = () => {
 					<span>Full Name:</span> {userData.fullName}
 				</p>
 
-				<p>
-					<span>Date:</span> {userData.Date}
-				</p>
 
 				<p>
 					<span>Sex:</span> {userData.genderSelect}
@@ -111,6 +109,9 @@ const ExamTable = () => {
 				<p>
 					<span>Course Taken (Transferee Only):</span>{' '}
 					{userData.transfereeCourse}
+				</p>
+						<p>
+					<span>Date Submitted:</span> {userData.Date}
 				</p>
 			</div>
 			<div className="examLinks">

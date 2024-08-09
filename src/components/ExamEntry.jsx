@@ -74,7 +74,7 @@ const ExamEntry = () => {
 	return (
 		<>
 			<div className="titleHead">
-				{/* <h1 className="">Kolehiyo ng Subic</h1> */}
+				<h1 className="">Kolehiyo ng Subic</h1>
 				<p>Entrance Exam</p>
 			</div>
 			<form onSubmit={handleSubmit} className="mainEntry">
