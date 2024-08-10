@@ -50,7 +50,7 @@ const ExamTable = () => {
 	// Retrieve and display user data
 	const userData = JSON.parse(localStorage.getItem('userData')) || {};
 
-	console.log(userData);
+	// console.log(userData);
 
 	const confirm = () =>{
 		const isConfirmed = window.confirm('Are you sure you want to submit your data and scores?');
@@ -117,31 +117,31 @@ const ExamTable = () => {
 			<div className="examLinks">
 				<div className='math'>
 					<BiMath size={50} />
-					<h1>Math Exam</h1>
+					<h1>Math</h1>
 					{scores.math !== null && <p>Score: {scores.math}</p>}
 					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/math">Take Exam</Link></motion.span>
 				</div>
 				<div className='eng'>
 					<TbMessageLanguage size={50} />
-					<h1>English Exam</h1>
+					<h1>English</h1>
 					{scores.english !== null && <p>Score: {scores.english}</p>}
 					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/english">Take Exam</Link></motion.span>
 				</div>
 				<div className='fil'>
 					<PiSunHorizonFill size={50} />
-					<h1>Filipino Exam</h1>
+					<h1>Filipino</h1>
 					{scores.filipino !== null && <p> Score: {scores.filipino}</p>}
 					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/filipino">Take Exam</Link></motion.span>
 				</div>
 				<div className='sci'>
 					<BiAtom size={50} />
-					<h1>Sciesnce Exam</h1>
+					<h1>Science</h1>
 					{scores.science !== null && <p>Score: {scores.science}</p>}
 					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/science">Take Exam</Link></motion.span>
 				</div>
 				<div className='sci'>
 					<FaPeopleGroup size={50} />
-					<h1>Science Exam</h1>
+					<h1>Social Study</h1>
 					{scores.socialstudy !== null && <p>Score: {scores.socialstudy}</p>}
 					<motion.span whileHover={{scale:1.05}} whileTap={{scale:1}}><Link to="/exams/socialstudy">Take Exam</Link></motion.span>
 				</div>

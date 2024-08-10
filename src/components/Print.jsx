@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from 'react';
@@ -18,22 +19,30 @@ const Print = () => {
 	console.log(userData);
 
     const  generatePdf = () =>{
+    const isConfirmed = window.confirm('Generate results?');
     const element = contentRef.current;
 
     const options = {
         margin:0,
         filename:`${userData.fullName}_Entrance_Exam.pdf`,
         image:{type:'png',quality:1.0},
-        html2canvas:{scale:3,useCORS:true},
-        jsPDF:{unit:'in', format:'a4', orientation:'portrait'}
+        html2canvas:{scale:3},
+        jsPDF:{unit:'mm', format:'a4', orientation:'portrait'}
     }
 
-        html2pdf().set(options).from(element).save();
+    ;
 
-         localStorage.clear();
-         console.log('All items cleared');
-         navigate('/');
+    if (isConfirmed) {
+        html2pdf().set(options).from(element).save()
+        console.log('All items cleared');
+        navigate('/');
+    }else{
+            return; 
+        }
     }
+    
+    console.log('NEW USER')
+    //  localStorage.clear();
 
     // window.onload(console.log('hello'))
 
@@ -42,7 +51,7 @@ const Print = () => {
 		<div id="printContainer" ref={contentRef}>
 			<div id="headerTitle">
 				<h1>
-                    {/* <img src="/images.jfif" id="schoolLogo" /> */}
+                    <img src="/images.jfif" id="schoolLogo" />
                 KOLEHIYO NG SUBIC</h1>
             <h3>Subic, Zambales</h3>
                 <h2 className='regTitle'>REGISTRATION FORM</h2>
@@ -57,7 +66,7 @@ const Print = () => {
                     <p id='guardian'>Name of Guardian: <span className='userData'>{userData.guardianName}</span></p>
                     <p id='schoolLast'>School Last Attended: <span className='userData'>{userData.lastSchool}</span></p>
                     <p id='schoolLastAdd'>Address of School Last Attended: <span className='userData'>{userData.lastSchoolAddress}</span></p>
-                    <p id='courseTaken'>Course Taken(for Transferees only):<span className='userData'>{userData.transfereeCourse}</span></p>
+                    <p id='courseTaken'>Course Taken(for Transferees only): <span className='userData'>{userData.transfereeCourse}</span></p>
                     <p id='courseInfo'>Course to be taken in this Institution:</p>
                     <p id='courseOne'>First Choice Course: <span className='userData'>{userData.course1st}</span></p>
                     <p id='courseTwo'>Second Choice Course: <span className='userData'>{userData.course2nd}</span></p>
@@ -109,8 +118,8 @@ const Print = () => {
                 </div>
                 <div>
                     <p><span className='userData'>{userData.science || 'No Score'}</span> Science</p>
-                    <p>0 Social Studies</p>
-                    <h4>TOTAL SCORE: <span className='userData'>{userData.english + userData.math + userData.filipino + userData.science || 'No Score'}</span></h4>
+                    <p><span className='userData'>{userData.socialstudy || 'No Score'}</span> Social Studies</p>
+                    <h4>TOTAL SCORE: <span className='userData'>{userData.english + userData.math + userData.filipino + userData.science  + userData.socialstudy || 'No Score'}</span></h4>
                 </div>
                 <div className="nameSig sigBox">
                     <p className="namePlate sig"></p>

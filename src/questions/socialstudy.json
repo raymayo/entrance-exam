@@ -11,29 +11,9 @@
         "answer": "Emilio Aguinaldo"
     },
     {
-        "question": "What is the capital city of the Philippines?",
-        "options": ["Manila", "Quezon City", "Cebu City", "Davao City"],
-        "answer": "Manila"
-    },
-    {
-        "question": "Which of the following is not a primary source of Philippine history?",
-        "options": ["Historical documents", "Artifacts", "Textbooks", "Oral testimonies"],
-        "answer": "Textbooks"
-    },
-    {
         "question": "The 1987 Philippine Constitution was enacted during which president's term?",
         "options": ["Ferdinand Marcos", "Corazon Aquino", "Joseph Estrada", "Gloria Macapagal-Arroyo"],
         "answer": "Corazon Aquino"
-    },
-    {
-        "question": "Which of the following islands is not part of the Philippines?",
-        "options": ["Luzon", "Mindanao", "Borneo", "Visayas"],
-        "answer": "Borneo"
-    },
-    {
-        "question": "What event is commemorated on June 12 in the Philippines?",
-        "options": ["Independence Day", "Araw ng Kagitingan", "Bonifacio Day", "Eid al-Fitr"],
-        "answer": "Independence Day"
     },
     {
         "question": "Who is known as the 'Father of Philippine Revolution'?",
@@ -44,11 +24,6 @@
         "question": "What was the primary purpose of the American colonial government in establishing public education in the Philippines?",
         "options": ["To promote nationalism", "To improve economic conditions", "To educate Filipinos about American culture", "To create a skilled workforce"],
         "answer": "To educate Filipinos about American culture"
-    },
-    {
-        "question": "What is the official national language of the Philippines?",
-        "options": ["Filipino", "Cebuano", "Hiligaynon", "Ilocano"],
-        "answer": "Filipino"
     },
     {
         "question": "Which historical figure is associated with the Malolos Congress?",
@@ -81,11 +56,6 @@
         "answer": "Honors Filipino veterans of World War II"
     },
     {
-        "question": "Which island group in the Philippines is known for its beautiful beaches and diving spots?",
-        "options": ["Luzon", "Visayas", "Mindanao", "Palawan"],
-        "answer": "Palawan"
-    },
-    {
         "question": "What is the highest mountain in the Philippines?",
         "options": ["Mount Apo", "Mount Pulag", "Mount Kitanglad", "Mount Banahaw"],
         "answer": "Mount Apo"
@@ -104,6 +74,57 @@
         "question": "Which of the following is a primary economic sector in the Philippines?",
         "options": ["Mining", "Tourism", "Agriculture", "Finance"],
         "answer": "Agriculture"
+    },
+    {
+        "question": "Which of the following is a primary function of government?",
+        "options": [
+            "Providing entertainment",
+            "Regulating economies",
+            "Protecting citizens' rights",
+            "Promoting international tourism"
+        ],
+        "answer": "Protecting citizens' rights"
+    },
+    {
+        "question": "What economic system is characterized by private ownership and free markets?",
+        "options": [
+            "Socialism",
+            "Communism",
+            "Capitalism",
+            "Feudalism"
+        ],
+        "answer": "Capitalism"
+    },
+    {
+        "question": "How did colonization affect indigenous cultures?",
+        "options": [
+            "Preserved their traditions and autonomy",
+            "Encouraged economic independence",
+            "Led to the loss of land and cultural identity",
+            "Improved their political systems"
+        ],
+        "answer": "Led to the loss of land and cultural identity"
+    },
+    {
+        "question": "How does climate change impact coastal regions?",
+        "options": [
+            "Increased agricultural productivity",
+            "Decreased rainfall and desertification",
+            "Rising sea levels and increased flooding",
+            "More frequent and severe earthquakes"
+        ],
+        "answer": "Rising sea levels and increased flooding"
+    },
+    {
+        "question": "How do natural resources influence the political power of nations?",
+        "options": [
+            "By ensuring stable political systems",
+            "By creating dependency on imports",
+            "By increasing economic strength and leverage",
+            "By reducing the need for international trade"
+        ],
+        "answer": "By increasing economic strength and leverage"
     }
+
 ]
 }
