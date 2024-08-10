@@ -18,7 +18,7 @@ const ExamEntry = () => {
 		lastSchoolAddress: '',
 		course1st: '',
 		course2nd: '',
-		transfereeCourse: '',
+		transfereeCourse: 'N/A',
 	});
 
 	// const [date, setDate] = useState(formatDate(new Date()));
