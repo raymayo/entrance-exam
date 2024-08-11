@@ -6,7 +6,7 @@ import { BiAtom } from "react-icons/bi";
 import { TbMessageLanguage } from "react-icons/tb";
 import { PiSunHorizonFill } from "react-icons/pi";
 import { FaPeopleGroup } from "react-icons/fa6";
-import ExelEditor from './ExelEditor'
+// import ExelEditor from './ExelEditor'
 import { motion } from 'framer-motion';
 
 
