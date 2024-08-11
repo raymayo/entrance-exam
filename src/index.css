@@ -115,12 +115,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f5f5f5; 
+  background: #ff000000; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #000000; 
+  background: #22222291; 
 }
 
 /* Handle on hover */
@@ -132,6 +132,7 @@ body {
   /* border: solid 1px red; */
   width: 100%;
   /* height: 100%; */
+  height: 100lvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -415,7 +416,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1.5rem;
   margin: 2rem;
 
@@ -592,7 +593,7 @@ select:-webkit-autofill:focus {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     margin: 0;
     padding: 0;
     margin-top: 1rem;
@@ -605,21 +606,24 @@ select:-webkit-autofill:focus {
     flex-direction: column;
     align-items: flex-start;
     color: var(--black);
-    background-color: rgba(17, 25, 40, 0.05);
     padding: 1rem;
     outline: rgba(17, 25, 40, 0.5) solid 1px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    backdrop-filter: blur(14px) saturate(150%);
-    -webkit-backdrop-filter: blur(14px) saturate(150%);
-    background-color: rgba(17, 25, 40, 0.05);
+    background-color: rgba(17, 25, 40, 0.1);
     border-radius: 1rem;
+
+    backdrop-filter: blur(14px) saturate(250%);
+    -webkit-backdrop-filter: blur(14px) saturate(100%);
+    /* background-color: rgba(221,221,221,.25); */
+    /* outline: rgba(17, 25, 40, 0.5) solid 1px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
 
     p {
       margin: 0;
       text-align: left;
       color: var(--black);
       margin-bottom: 1rem;
-      font-size: 1rem;
+      font-size: 1.25rem;
       font-weight: 500;
     }
 
@@ -634,7 +638,7 @@ select:-webkit-autofill:focus {
 
       li {
         width: 100%;
-        background-color: rgba(17, 25, 40, 0.1);
+        background-color: rgba(17, 25, 40, .3);
         outline: rgba(17, 25, 40, 0.5) solid 1px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         border-radius: .5rem;
@@ -642,7 +646,7 @@ select:-webkit-autofill:focus {
 
       label {
         width: 100%;
-        padding: .5rem;
+        padding: .3rem;
         display: block;
         cursor: pointer;
       }
