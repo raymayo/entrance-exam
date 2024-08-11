@@ -34,6 +34,7 @@ const Print = () => {
 
     if (isConfirmed) {
         html2pdf().set(options).from(element).save()
+        localStorage.clear();
         console.log('All items cleared');
         navigate('/');
     }else{
