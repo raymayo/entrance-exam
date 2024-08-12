@@ -105,7 +105,7 @@ const Exam = () => {
             <p>{index + 1}. {question.question}</p>
             <ul>
               {question.options.map((option, idx) => (
-                <motion.li key={idx} className='option-hover' whileHover={{backgroundColor:'rgba(17, 25, 40, 0.5)'}} whileTap={{scale:.95}}>
+                <motion.li key={idx} className='option-hover' whileTap={{scale:.95}}>
                   <label>
                     <input
                       type="radio"

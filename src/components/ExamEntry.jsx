@@ -72,7 +72,7 @@ const ExamEntry = () => {
 	}
 
 	return (
-		<>
+		<div id='entry'>
 			<div className="titleHead">
 				<h1 className="">Kolehiyo ng Subic</h1>
 				<p>Entrance Exam</p>
@@ -257,9 +257,9 @@ const ExamEntry = () => {
 						/>
 					</div>
 				</div>
-				<motion.button type="submit" whileHover={{scale:1.05}} whileTap={{scale:1}}>Register</motion.button>
+				<motion.button type="submit" whileHover={{scale:1.01}} whileTap={{scale:1}}>Register</motion.button>
 			</form>
-		</>
+		</div>
 	);
 };
 

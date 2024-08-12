@@ -27,13 +27,14 @@ const Print = () => {
         filename:`${userData.fullName}_Entrance_Exam.pdf`,
         image:{type:'png',quality:1.0},
         html2canvas:{scale:3},
-        jsPDF:{unit:'mm', format:'a4', orientation:'portrait'}
+        jsPDF:{unit:'mm', format:'legal', orientation:'portrait'}
     }
 
     ;
 
     if (isConfirmed) {
         html2pdf().set(options).from(element).save()
+        // window.print()
         localStorage.clear();
         console.log('All items cleared');
         navigate('/');
