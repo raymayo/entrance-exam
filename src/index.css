@@ -95,6 +95,7 @@
   bottom: -500px;
   z-index: -1;
   border-radius: 100rem;
+  
 }
 
 /* #root{
@@ -403,6 +404,8 @@ select:-webkit-autofill:focus {
     padding: 0 1.5rem 1.5rem 1.5rem;
     row-gap: .5rem;
     column-gap: 2rem; 
+    /* box-shadow: 0px 5px; */
+
 
     /* background-color: var(--bg); */
     background-color: #B9FF66;
@@ -436,11 +439,12 @@ select:-webkit-autofill:focus {
       margin: 0;
     }
   }
-/* 
+
   .userInfo:hover{
     box-shadow: 0px 5px;
+    outline: solid 1px var(--black);
     transition: all .3s ease;
-  } */
+  }
 
   .examLinks {
     border-radius: 1rem;
@@ -533,9 +537,9 @@ select:-webkit-autofill:focus {
   
 
   #submitExam{
-    background-color: var(--black);
+    /* background-color: var(--black);
     color: var(--bg);
-    font-weight: 500;
+    font-weight: 500; */
   }
 
 }
@@ -590,7 +594,7 @@ select:-webkit-autofill:focus {
     padding: 1rem;
     border: solid 1px var(--black);
     border-radius: 1rem;
-    background-color: var(--bg);
+    background-color: #e4e4e4;
     /* box-shadow: 0px 5px; */
 
 
@@ -955,10 +959,9 @@ h4 {
   border: rgba(17, 25, 40, 0.5) solid 1px;
 }
 
-
-#submitExam {
-
-  background: var(--black);
+#submitExamBox{
+  width: 60%;
+  background-color: #B9FF66;
   font-size: 1rem;
   padding: .5rem;
   margin: 0;
@@ -967,6 +970,24 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--black);
+  border: solid 1px var(--black);
+}
+
+#submitExamBox:hover{
+  /* background-color: var(--black); */
+  /* color: #B9FF66; */
+  outline: solid 1px var(--black);
+  box-shadow: 0px 5px;
+
+  transition: all .3s ease;
+}
+
+
+#submitExam {
+  background-color: #B9FF66;
+  color: var(--black);
+  width: 100%;
 }
 
 .userData{
