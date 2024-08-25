@@ -131,7 +131,7 @@ body {
 }
 
 .mainEntry {
-  width: 50dvw;
+  width: 45dvw;
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 2rem;

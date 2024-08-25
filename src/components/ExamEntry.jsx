@@ -103,7 +103,7 @@ const ExamEntry = () => {
 					</div>
 					<div>
 						<label className='text-zinc-900 block mb-1 text-sm font-medium'>Date</label>
-						<input className='w-full cursor-not-allowed bg-white text-zinc-500 border border-zinc-100 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black'
+						<input className='w-full cursor-not-allowed bg-white text-zinc-400 border border-zinc-100 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black'
 							type="text"
 							name="Date"
 							value={formData.Date}
