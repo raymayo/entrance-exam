@@ -96,11 +96,14 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content:center
 }
 
 
 #root {
 
+  width:100svw;
+  height:100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,8 +117,6 @@ body {
 
 #entry{
   /* background-color: var(--bg); */
-  width: 100lvw;
-  height: 100lvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -404,6 +405,7 @@ select:-webkit-autofill:focus {
     font-size: 30pt;
     font-weight: 500;
     /* border: solid 1px blue; */
+    display:flex;
     margin: 0;
     color: black;
 
@@ -419,7 +421,7 @@ select:-webkit-autofill:focus {
 
 
   h3 {
-    margin-top: -1.5rem;
+    margin-top: -.8rem;
   }
 
 

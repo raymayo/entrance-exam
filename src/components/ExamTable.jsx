@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Modal from './Modal';
 
 import { Link } from 'react-router-dom';
@@ -11,7 +12,10 @@ import { FaPeopleGroup } from 'react-icons/fa6';
 // import ExelEditor from './ExelEditor'
 import { motion } from 'framer-motion';
 
+
+
 const ExamTable = () => {
+	const navigate = useNavigate();
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	const handleOpenModal = () => setIsModalOpen(true);
@@ -20,6 +24,7 @@ const ExamTable = () => {
 	const handleConfirm = () => {
 		console.log('Confirmed!');
 		handleCloseModal();
+		navigate('/print');
 	};
 	const [scores, setScores] = useState({
 		math: null,
@@ -205,8 +210,8 @@ const ExamTable = () => {
 				whileHover={{ scale: 1.01 }}
 				whileTap={{ scale: 1 }}
 				id="submitExamBox"
-				className="mt-6 w-3/5 bg-zinc-900 text-white inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow h-9 px-4 py-2">
-				<button  id="submitExam" className='w-full' onClick={confirm}>
+				className="w-3/5  mt-6">
+				<button  id="submitExam" className='w-full bg-zinc-900 text-white inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow h-9 px-4 py-2' onClick={confirm}>
 					Submit Data & Scores
 				</button>
 			</motion.span>

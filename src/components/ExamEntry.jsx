@@ -97,7 +97,7 @@ const ExamEntry = () => {
 	}
 
 	return (
-		<div id="entry">
+		<div id="entry" className=''>
 			<Modal
 				isOpen={isModalOpen}
 				onClose={handleCloseModal}
