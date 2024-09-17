@@ -120,7 +120,7 @@ const Exam = () => {
 	};
 
 	return (
-		<div className="examBox">
+		<div className="examBox w-full p-4">
 			<Modal
 				isOpen={isModalOpen}
 				onClose={handleCloseModal}
@@ -131,7 +131,7 @@ const Exam = () => {
 			<h2 className="text-zinc-900 text-2xl font-semibold">
 				{examName.charAt(0).toUpperCase() + examName.slice(1)} Questions
 			</h2>
-			<ol className="questionContainer p-3 gap-6">
+			<ol className="questionContainer p-3 gap-6 w-1/2 md:w-5/6 lg:w-5/6 xl:1/2 2xl:w-1/2">
 				{questions.map((question, index) => (
 					<li
 						key={index}
