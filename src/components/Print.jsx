@@ -25,9 +25,9 @@ const Print = () => {
 		const options = {
 			margin: 0,
 			filename: `${userData.fullName}_Entrance_Exam.pdf`,
-			image: { type: 'png', quality: 1.0 },
-			html2canvas: { scale: 3 },
-			jsPDF: { unit: 'mm', format: 'legal', orientation: 'portrait' },
+			image: { type: 'png', quality: 3 },
+			html2canvas: { scale: 1 },
+			jsPDF: { unit: 'in', format: 'legal' },
 		};
 
 		html2pdf().set(options).from(element).save();
@@ -118,7 +118,7 @@ const Print = () => {
 				</div>
 				<div id="reqBox">
 					<div id="year1">
-						<h3>INCOMING FIRST YEAR</h3>
+						<h3 className='font-semibold'>INCOMING FIRST YEAR</h3>
 						<div className="reqList">
 							<p>( ) High School Card Form 138</p>
 							<p>( ) Certificate of Good Moral Character</p>
@@ -131,7 +131,7 @@ const Print = () => {
 						</div>
 					</div>
 					<div id="transf">
-						<h3>FOR TRANSFEREE</h3>
+						<h3 className='font-semibold'>FOR TRANSFEREE</h3>
 						<div className="reqList">
 							<p>( ) Transcript of record/ Certificate of Grade</p>
 							<p>( ) Honorable Dismissal</p>
@@ -165,7 +165,7 @@ const Print = () => {
 					</div>
 				</div>
 
-				<h4>Entrance Examination Result</h4>
+				<h4 className='font-semibold text-lg'>Entrance Examination Result</h4>
 				<div id="examResult">
 					<div>
 						<p>
@@ -217,7 +217,7 @@ const Print = () => {
 				</div>
 			</div>
 			<motion.button
-				className="p-2 m-6"
+				className="p-2 m-2 text-black"
 				id="pdf"
 				onClick={generatePdf}
 				whileHover={{ scale: 1.1 }}

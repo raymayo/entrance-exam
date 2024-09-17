@@ -97,7 +97,7 @@ const ExamEntry = () => {
 	}
 
 	return (
-		<div id="entry" className=''>
+		<div id="entry" className='bg-white w-1/2 md:w-5/6 lg:w-5/6 xl:w-5/6 2xl:w-1/2'>
 			<Modal
 				isOpen={isModalOpen}
 				onClose={handleCloseModal}
@@ -116,7 +116,7 @@ const ExamEntry = () => {
 							Reg. No
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="regNo"
 							placeholder="e.g. 20-4567"
@@ -130,7 +130,7 @@ const ExamEntry = () => {
 							Full Name
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="fullName"
 							placeholder="e.g. Dela Cruz, Juan, M."
@@ -141,10 +141,10 @@ const ExamEntry = () => {
 					</div>
 					<div>
 						<label className="text-zinc-900 block mb-1 text-sm font-medium">
-							Date
+							Date Today
 						</label>
 						<input
-							className="w-full cursor-not-allowed bg-white text-zinc-400 border border-zinc-100 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black"
+							className="w-full cursor-not-allowed bg-white text-zinc-400 border border-zinc-100 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="Date"
 							value={formData.Date}
@@ -157,7 +157,7 @@ const ExamEntry = () => {
 							Sex
 						</label>
 						<select
-							className="w-full bg-white border border-zinc-200 shadow-sm text-gray-900 rounded-md focus:border-black block text-base p-2 pl-3"
+							className="w-full bg-white border border-zinc-200 shadow-sm text-gray-900 rounded-md focus:border-black block text-base p-2 pl-3 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							name="genderSelect"
 							id="genderSelect"
 							onChange={handleChange}
@@ -175,7 +175,7 @@ const ExamEntry = () => {
 							Address
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="address"
 							placeholder="e.g. 0123 Rizal St. Matain, Subic, Zambales"
@@ -189,7 +189,7 @@ const ExamEntry = () => {
 							Date of Birth
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="birthday"
 							placeholder="MM/DD/YYYY"
@@ -203,7 +203,7 @@ const ExamEntry = () => {
 							Place of Birth
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="birthplace"
 							placeholder="Matain, Subic, Zambales"
@@ -219,7 +219,7 @@ const ExamEntry = () => {
 							Contact No
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="number"
 							name="contactNo"
 							placeholder="e.g. 09123456789"
@@ -233,7 +233,7 @@ const ExamEntry = () => {
 							Guardian/Parent Name
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="guardianName"
 							placeholder="e.g. Juan Dela Cruz"
@@ -247,7 +247,7 @@ const ExamEntry = () => {
 							Last School Attended
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="lastSchool"
 							value={formData.lastSchool}
@@ -261,7 +261,7 @@ const ExamEntry = () => {
 							Last School Address
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="lastSchoolAddress"
 							value={formData.lastSchoolAddress}
@@ -275,7 +275,7 @@ const ExamEntry = () => {
 							1st Choice Course
 						</label>
 						<select
-							className="w-full bg-white border border-zinc-200 shadow-sm text-gray-900 rounded-md focus:border-black block text-base p-2 pl-3"
+							className="w-full bg-white border border-zinc-200 shadow-sm text-gray-900 rounded-md focus:border-black block text-base p-2 pl-3 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							name="course1st"
 							value={formData.course1st}
 							onChange={handleChange}
@@ -299,7 +299,7 @@ const ExamEntry = () => {
 							2nd Choice Course
 						</label>
 						<select
-							className="w-full bg-white border border-zinc-200 shadow-sm text-gray-900 rounded-md focus:border-black block text-base p-2 pl-3"
+							className="w-full bg-white border border-zinc-200 shadow-sm text-gray-900 rounded-md focus:border-black block text-base p-2 pl-3 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							name="course2nd"
 							value={formData.course2nd}
 							onChange={handleChange}
@@ -323,7 +323,7 @@ const ExamEntry = () => {
 							Course Taken (Transferee Only)
 						</label>
 						<input
-							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900"
+							className="w-full bg-white border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black text-zinc-900 md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="transfereeCourse"
 							placeholder="Course Taken from Previous School"

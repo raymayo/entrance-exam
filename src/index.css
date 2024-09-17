@@ -57,23 +57,23 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
   
 
   /* overflow-x: hidden; */
 
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 
-  --bg: #fff;
-  --black: #191A23;
-  --borderColor: #000
+  display: grid;
+  place-items:center;
+  height:100svh;
+  width:100svw;
 } 
 
 
@@ -92,36 +92,17 @@
 
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content:center
 }
 
 
 #root {
-
-  width:100svw;
-  height:100svh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
+  /* height: 100%; */
 }
 
 
 
 
-
-#entry{
-  /* background-color: var(--bg); */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .titleHead {
   width: 100%;
@@ -132,7 +113,6 @@ body {
 }
 
 .mainEntry {
-  width: 45dvw;
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 2rem;
@@ -208,12 +188,6 @@ select:-webkit-autofill:focus {
 }
 
 .mainTable {
-  width: 100lvw;
-  height: 100lvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   h2 {
     grid-column-start: 1;
@@ -223,7 +197,7 @@ select:-webkit-autofill:focus {
 
   .userInfo {
     display: grid;
-    width: 60%;
+    /* width: 60%; */
   
     
     grid-auto-flow:column;
@@ -251,7 +225,6 @@ select:-webkit-autofill:focus {
     flex-direction: row;
     align-items: stretch;
 
-    width: 60%;
 
     div {
       width: 100%;
@@ -358,33 +331,15 @@ select:-webkit-autofill:focus {
 
 
 #printContainer {
-  /* border: solid 1px red; */
-  /* max-width: 700.8px; */
-  min-width: 8.5in;
-  /* max-height: 1027.2px; */
-  min-height: 14in;
+
   background-color: white;
-  color: var(--black);
-  display: grid;
   padding: 1.5rem;
-*{  line-height: 1.6;}
+  display: grid;
+*{  line-height: 1.5;}
 
-  /* * {font-family: Palatino;} */
 
-  *{box-sizing: border-box;}  
-
-  span {
-    /* text-decoration: underline; */
-  }
-
-  p {
-    font-size: 11pt;
-  }
-
-  h3 {
-    font-weight: 500;
-    font-size: 1rem;
-  }
+  *{box-sizing: border-box; color:black;
+  }  
 
   * {
     margin: 0;
@@ -404,33 +359,24 @@ select:-webkit-autofill:focus {
   h1 {
     font-size: 30pt;
     font-weight: 500;
-    /* border: solid 1px blue; */
     display:flex;
     margin: 0;
     color: black;
+    align-items:  center;
+    position: relative;
 
     img{
       width: 4.5rem;
       height: 4rem;
+      position: absolute;
+      left: -4.5rem;
+      top: 1rem;
     }
-
-
-
-
   }
-
-
-  h3 {
-    margin-top: -.8rem;
-  }
-
-
-}
-
-img {
+  
+  img {
   padding-right: .5rem !important;
   vertical-align: middle;
-  /* width: 15%; */
 }
 
 .regTitle {
@@ -438,21 +384,17 @@ img {
   font-weight: 600;
 }
 
-#schoolLogo {
-  /* height: 100%; */
-  /* object-fit: contain; */
+
 }
+
+
+
 
 #infoContainer {
   display: grid;
   grid-template-columns: repeat(4, auto);
   text-align: left;
-  gap: .5rem;
 
-
-  * {
-    /* border: solid 1px red; */
-  }
 
   #name {
     grid-column: 1/4;
@@ -494,23 +436,15 @@ img {
     margin-left: -10rem;
   }
 
-  span{
-    border-bottom: 1px solid black;
-  }
-
 }
 
 #reqBox {
-  /* border: solid 1px red; */
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 1rem;
   padding: 1rem 0;
   border-bottom: dashed 1px black;
   margin-bottom: 1rem;
-  /* padding: 1rem; */
-  /* *{border: solid 1px red;} */
-  /* border: solid 1px red; */
 
 
   .reqList {
@@ -540,8 +474,9 @@ img {
 .namePlate::after {
   content: '';
   width: 100%;
-  border-bottom: solid 1px var(--black);
   display: block;
+  padding-bottom: .5rem;
+  border-bottom: solid 1px black;
   text-align: center;
 
 }
@@ -631,7 +566,6 @@ h4 {
   position: fixed;
   top: 10px;
   right: 10px;
-  color: var(--black);
   border-radius: .5rem;
   background-color: transparent;
 }
@@ -643,5 +577,8 @@ h4 {
 
 
 .userData{
-  border-bottom: solid 1px black;
+  /* padding-bottom: 1rem;
+*/
+font-weight: 500;
 }
+
