@@ -97,7 +97,7 @@ const ExamEntry = () => {
 	}
 
 	return (
-		<div id="entry" className='bg-white w-1/2 md:w-5/6 lg:w-5/6 xl:w-5/6 2xl:w-1/2'>
+		<div id="entry" className=' w-1/2 md:w-5/6 lg:w-5/6 xl:w-5/6 2xl:w-1/2 p-6 rounded-xl'>
 			<Modal
 				isOpen={isModalOpen}
 				onClose={handleCloseModal}
@@ -106,8 +106,8 @@ const ExamEntry = () => {
 				message="Please double check your information before submitting. If everything is good you can proceed."
 			/>
 			<div className="titleHead text-zinc-900 my-4">
-				<h1 className="text-4xl font-bold">KOLEHIYO NG SUBIC</h1>
-				<p className="text-xl font-medium">Entrance Exam</p>
+				<h1 className="text-5xl font-bold">KOLEHIYO NG SUBIC</h1>
+				<p className="text-2xl font-medium">Entrance Exam</p>
 			</div>
 			<form onSubmit={handleSubmit} className="mainEntry">
 				<div className="col1">
@@ -336,7 +336,7 @@ const ExamEntry = () => {
 					type="submit"
 					whileHover={{ scale: 1.01 }}
 					whileTap={{ scale: 1 }}
-					className="col-span-2 bg-zinc-900 text-white inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow h-9 px-4 py-2">
+					className="col-span-2 bg-green-400 text-green-950 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium shadow h-9 px-4 py-2">
 					Register New Student
 				</motion.button>
 			</form>

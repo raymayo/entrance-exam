@@ -165,7 +165,7 @@ const ExamTable = () => {
 				</div>
 			</div>
 			<div className="examLinks gap-6 w-3/5 lg:w-5/6 xl:w-3/5 md:w-5/6">
-				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3">
+				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3 bg-white">
 					<BiMath size={50} />
 					<h1 className="font-semibold text-lg md:text-sm lg:text-base">Math</h1>
 					{scores.math !== null && <p>Score: {scores.math}</p>}
@@ -173,7 +173,7 @@ const ExamTable = () => {
 						<Link to="/exams/math" className="cursor-pointer col-span-2 border border-zinc-200 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-sm h-9 px-4 py-2 hover:bg-zinc-100 md:text-xs lg:text-xs xl:text-sm 2xl:text-sm">Take Exam</Link>
 					</motion.span>
 				</div>
-				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3">
+				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3 bg-white">
 					<TbMessageLanguage size={50} />
 					<h1 className="font-semibold text-lg md:text-sm lg:text-base">English</h1>
 					{scores.english !== null && <p>Score: {scores.english}</p>}
@@ -181,7 +181,7 @@ const ExamTable = () => {
 						<Link to="/exams/english" className='cursor-pointer col-span-2 border border-zinc-200 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-sm h-9 px-4 py-2 hover:bg-zinc-100 md:text-xs lg:text-xs xl:text-sm 2xl:text-sm'>Take Exam</Link>
 					</motion.span>
 				</div>
-				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3">
+				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3 bg-white">
 					<PiSunHorizonFill size={50} />
 					<h1 className="font-semibold text-lg md:text-sm lg:text-base">Filipino</h1>
 					{scores.filipino !== null && <p> Score: {scores.filipino}</p>}
@@ -189,7 +189,7 @@ const ExamTable = () => {
 						<Link to="/exams/filipino" className="cursor-pointer col-span-2 border border-zinc-200 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-sm h-9 px-4 py-2 hover:bg-zinc-100 md:text-xs lg:text-xs xl:text-sm 2xl:text-sm">Take Exam</Link>
 					</motion.span>
 				</div>
-				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3">
+				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3 bg-white">
 					<BiAtom size={50} />
 					<h1 className="font-semibold text-lg md:text-sm lg:text-base">Science</h1>
 					{scores.science !== null && <p>Score: {scores.science}</p>}
@@ -197,7 +197,7 @@ const ExamTable = () => {
 						<Link to="/exams/science" className="cursor-pointer col-span-2 border border-zinc-200 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow-sm h-9 px-4 py-2 hover:bg-zinc-100 md:text-xs lg:text-xs xl:text-sm 2xl:text-sm">Take Exam</Link>
 					</motion.span>
 				</div>
-				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3">
+				<div className="border border-zinc-200 shadow p-4 rounded-xl text-zinc-900 gap-3 bg-white">
 					<FaPeopleGroup size={50} />
 					<h1 className="font-semibold text-lg md:text-sm lg:text-base">Social Study</h1>
 					{scores.socialstudy !== null && <p>Score: {scores.socialstudy}</p>}
@@ -211,7 +211,7 @@ const ExamTable = () => {
 				whileTap={{ scale: 1 }}
 				id="submitExamBox"
 				className="mt-6 w-3/5 lg:w-5/6 xl:w-3/5 lg:bg-white md:w-5/6 md:bg-red-500">
-				<button  id="submitExam" className='w-full bg-zinc-900 text-white inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow h-9 px-4 py-2' onClick={confirm}>
+				<button  id="submitExam" className='w-full bg-green-400 text-green-950 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow h-9 px-4 py-2' onClick={confirm}>
 					Submit Data & Scores
 				</button>
 			</motion.span>
