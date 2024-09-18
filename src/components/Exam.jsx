@@ -135,7 +135,7 @@ const Exam = () => {
 				{questions.map((question, index) => (
 					<li
 						key={index}
-						className="questionBox border border-zinc-200 rounded-md shadow p-4 text-zinc-900">
+						className="questionBox border border-zinc-200 rounded-md shadow p-4 text-zinc-900 bg-white">
 						<p className="font-semibold mb-4">
 							{index + 1}. {question.question}
 						</p>
@@ -161,7 +161,7 @@ const Exam = () => {
 					</li>
 				))}
 				<button
-					className="submitExam col-span-2 bg-zinc-900 text-white inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow h-9 px-4 py-2"
+					className="submitExam col-span-2 bg-green-400 text-green-950 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow h-9 px-4 py-2"
 					onClick={handleSubmit}>
 					Submit Answers
 				</button>
