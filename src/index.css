@@ -629,3 +629,33 @@ h4 {
 font-weight: 500;
 }
 
+[contenteditable="true"] {
+  /* background: rgba(74,222,128,1); */
+  border-bottom: 1px solid black;
+  /* padding:8px; */
+  transition: all 0.5s, color 0.3s;
+}
+
+[contenteditable="true"]:focus {
+  background-color: rgba(74,222,128,1);
+  color: #333;
+  /* border-color: #007BFF; */
+  outline: none; /* Remove default outline for a cleaner look */
+}
+
+#editBtn{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-radius: .5rem;
+  background-color: transparent;
+}
+
+#editBtn:hover{
+  border: none;
+  border: rgba(17, 25, 40, 0.5) solid 1px;
+}

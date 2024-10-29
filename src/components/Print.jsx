@@ -9,12 +9,14 @@ import html2canvas from 'html2canvas';
 import { MdFileDownload } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { HiPencilSquare } from "react-icons/hi2";
 
 const Print = () => {
 	const contentRef = useRef();
 	const navigate = useNavigate();
 
 	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [editModal, setEditModal] = useState(false)
 
 	const handleOpenModal = () => setIsModalOpen(true);
 	const handleCloseModal = () => setIsModalOpen(false);
@@ -38,6 +40,16 @@ const Print = () => {
 		console.log('Confirmed!');
 		handleCloseModal();
 	};
+
+	const [editName, setEditName] = useState("Edit")
+
+	// const ediData = () => {
+		
+	// 	setEditModal(!editModal)
+
+	// 	editModal ? setEditName('Edit'): setEditName('Save')
+
+	// }
 
 	const userData = JSON.parse(localStorage.getItem('userData')) || {};
 	console.log(userData);
@@ -71,49 +83,49 @@ const Print = () => {
 				</div>
 				<div id="infoContainer">
 					<p id="name">
-						Name: <span className="userData">{userData.fullName}</span>
+						Name: <span className="userData" contentEditable={editModal} spellcheck="false">{userData.fullName}</span>
 					</p>
 					<p id="sex">
-						Sex: <span className="userData">{userData.genderSelect}</span>
+						Sex: <span className="userData" contentEditable={editModal} spellcheck="false">{userData.genderSelect}</span>
 					</p>
 					<p id="address">
-						Address: <span className="userData">{userData.address}</span>
+						Address: <span className="userData" contentEditable={editModal} spellcheck="false">{userData.address}</span>
 					</p>
 					<p id="birthday">
-						Date of Birth: <span className="userData">{userData.birthday}</span>
+						Date of Birth: <span className="userData" contentEditable={editModal} spellcheck="false">{userData.birthday}</span>
 					</p>
 					<p id="birthplace">
 						Place of Birth:{' '}
-						<span className="userData">{userData.birthplace}</span>
+						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.birthplace}</span>
 					</p>
 					<p id="contactNum">
 						Contact Number:{' '}
-						<span className="userData">{userData.contactNo}</span>
+						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.contactNo}</span>
 					</p>
 					<p id="guardian">
 						Name of Guardian:{' '}
-						<span className="userData">{userData.guardianName}</span>
+						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.guardianName}</span>
 					</p>
 					<p id="schoolLast">
 						School Last Attended:{' '}
-						<span className="userData">{userData.lastSchool}</span>
+						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.lastSchool}</span>
 					</p>
 					<p id="schoolLastAdd">
 						Address of School Last Attended:{' '}
-						<span className="userData">{userData.lastSchoolAddress}</span>
+						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.lastSchoolAddress}</span>
 					</p>
 					<p id="courseTaken">
 						Course Taken(for Transferees only):{' '}
-						<span className="userData">{userData.transfereeCourse}</span>
+						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.transfereeCourse}</span>
 					</p>
 					<p id="courseInfo">Course to be taken in this Institution:</p>
 					<p id="courseOne">
 						First Choice Course:{' '}
-						<span className="userData">{userData.course1st}</span>
+						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.course1st}</span>
 					</p>
 					<p id="courseTwo">
 						Second Choice Course:{' '}
-						<span className="userData">{userData.course2nd}</span>
+						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.course2nd}</span>
 					</p>
 				</div>
 				<div id="reqBox">
@@ -151,12 +163,12 @@ const Print = () => {
 
 				<div className="letterScore">
 					<p id="date">
-						DATE: <span className="userData">{userData.Date}</span>
+						DATE: <span className="userData" contentEditable={editModal} spellcheck="false">{userData.Date}</span>
 					</p>
 					<p id="letter1">
-						Mr./Ms <span className="userData">{userData.fullName}</span> is
+						Mr./Ms <span className="userData" contentEditable={editModal} spellcheck="false">{userData.fullName}</span> is
 						granted to take the Entrance Examination on{' '}
-						<span className="userData">{userData.Date}</span> at{' '}
+						<span className="userData" spellcheck="false">{userData.Date}</span> at{' '}
 						<span>COMLAB2</span>{' '}
 					</p>
 					<div className="nameSig">
@@ -169,15 +181,15 @@ const Print = () => {
 				<div id="examResult">
 					<div>
 						<p>
-							<span className="userData">{userData.english || 'No Score'}</span>{' '}
+							<span className="userData" contentEditable={editModal} spellcheck="false">{userData.english || 'No Score'}</span>{' '}
 							English
 						</p>
 						<p>
-							<span className="userData">{userData.math || 'No Score'}</span>{' '}
+							<span className="userData" contentEditable={editModal} spellcheck="false">{userData.math || 'No Score'}</span>{' '}
 							Mathematics
 						</p>
 						<p>
-							<span className="userData">
+							<span className="userData" contentEditable={editModal} spellcheck="false">
 								{userData.filipino || 'No Score'}
 							</span>{' '}
 							Filipino
@@ -185,18 +197,18 @@ const Print = () => {
 					</div>
 					<div>
 						<p>
-							<span className="userData">{userData.science || 'No Score'}</span>{' '}
+							<span className="userData" contentEditable={editModal} spellcheck="false">{userData.science || 'No Score'}</span>{' '}
 							Science
 						</p>
 						<p>
-							<span className="userData">
+							<span className="userData" contentEditable={editModal} spellcheck="false">
 								{userData.socialstudy || 'No Score'}
 							</span>{' '}
 							Social Studies
 						</p>
 						<h4>
 							TOTAL SCORE:{' '}
-							<span className="userData">
+							<span className="userData" contentEditable={editModal} spellcheck="false">
 								{userData.english +
 									userData.math +
 									userData.filipino +
@@ -223,7 +235,17 @@ const Print = () => {
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 1 }}>
 				<MdFileDownload onClick={generatePdf} size={25} />
-				Download
+				Export
+			</motion.button>
+
+			<motion.button
+				onClick={() => setEditModal(!editModal)}
+				id='editBtn'
+				className="p-2 m-2 text-black"
+				whileHover={{ scale: 1.1 }}
+				whileTap={{ scale: 1 }}>
+					<HiPencilSquare size={25}/>
+				{editModal ? "Save" : "Edit"}
 			</motion.button>
 		</>
 	);
