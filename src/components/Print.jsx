@@ -28,7 +28,7 @@ const Print = () => {
 			margin: 0,
 			filename: `${userData.fullName}_Entrance_Exam.pdf`,
 			image: { type: 'png', quality: 3 },
-			html2canvas: { scale: 1 },
+			html2canvas: { scale: 3 },
 			jsPDF: { unit: 'in', format: 'legal' },
 		};
 
@@ -74,14 +74,15 @@ const Print = () => {
 			/>
 			<div id="printContainer" ref={contentRef}>
 				<div id="headerTitle">
-					<h1>
+					<div>
 						<img src="/images.jfif" id="schoolLogo" />
-						KOLEHIYO NG SUBIC
-					</h1>
+						<h1>KOLEHIYO NG SUBIC</h1>
+						
+					</div>
 					<h3 className="">Subic, Zambales</h3>
 					<h2 className="regTitle text-xl">REGISTRATION FORM</h2>
 				</div>
-				<div id="infoContainer">
+				<div id="infoContainer" className='printText'>
 					<p id="name">
 						Name: <span className="userData" contentEditable={editModal} spellcheck="false">{userData.fullName}</span>
 					</p>
@@ -128,7 +129,7 @@ const Print = () => {
 						<span className="userData" contentEditable={editModal} spellcheck="false">{userData.course2nd}</span>
 					</p>
 				</div>
-				<div id="reqBox">
+				<div id="reqBox" className='printText'>
 					<div id="year1">
 						<h3 className='font-semibold'>INCOMING FIRST YEAR</h3>
 						<div className="reqList">

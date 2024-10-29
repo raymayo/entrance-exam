@@ -403,21 +403,24 @@ select:-webkit-autofill:focus {
   justify-content: center;
   font-family: 'proxima' !important;
 
-  h1 {
-    font-size: 30pt;
+  div {
+    font-size: 36px;
+    outline: solid 1px black;
     font-weight: 500;
     display:flex;
     margin: 0;
     color: black;
     align-items:  center;
     position: relative;
+    gap: 1rem;
+    position: relative;
 
     img{
-      width: 4.5rem;
-      height: 4rem;
+      height: 3.5rem;
       position: absolute;
       left: -4.5rem;
       top: 1rem;
+
     }
   }
   
@@ -658,4 +661,8 @@ font-weight: 500;
 #editBtn:hover{
   border: none;
   border: rgba(17, 25, 40, 0.5) solid 1px;
+}
+
+.printText{
+  font-family: 'Times New Roman', Times, serif !important;
 }
