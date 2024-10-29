@@ -666,3 +666,8 @@ font-weight: 500;
 .printText{
   font-family: 'Times New Roman', Times, serif !important;
 }
+
+input:focus{
+  border: solid 1px black !important;
+  outline: solid 2px rgba(74,222,128,1) !important;
+}
