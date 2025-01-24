@@ -21,6 +21,8 @@ const Print = () => {
 	const handleOpenModal = () => setIsModalOpen(true);
 	const handleCloseModal = () => setIsModalOpen(false);
 
+	console.log(localStorage)
+
 	const handleConfirm = () => {
 		const element = contentRef.current;
 
