@@ -16,7 +16,7 @@ const ExaminerSchema = new mongoose.Schema({
 	genderSelect: {
 		type: String, // Gender is stored as a string
 		required: true, // Gender is required
-		enum: ['Male', 'Female', 'Other'], // Optional: restrict to predefined values
+		enum: ['MALE', 'FEMALE', 'OTHER'], // Optional: restrict to predefined values
 	},
 	address: {
 		type: String,

@@ -132,7 +132,7 @@
 		},
 		{
 			"question": "What is the correct plural form of 'ox'?",
-			"options": ["Oxes", "Oxen", "Oxes", "Ox"],
+			"options": ["Oxes", "Oxen", "Oxe", "Ox"],
 			"answer": "Oxen"
 		},
 		{
