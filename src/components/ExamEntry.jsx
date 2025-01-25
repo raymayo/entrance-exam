@@ -144,7 +144,7 @@ const ExamEntry = () => {
 							Date Today
 						</label>
 						<input
-							className="w-full cursor-not-allowed bg-white text-zinc-400 border border-zinc-100 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black md:text-sm lg:text-sm xl:text-base 2xl:text-base"
+							className="w-full cursor-not-allowed bg-zinc-200 text-zinc-400 border border-zinc-200 p-2 pl-3 text-base rounded-md shadow-sm placeholder-zinc-500 focus:border focus:border-black md:text-sm lg:text-sm xl:text-base 2xl:text-base"
 							type="text"
 							name="Date"
 							value={formData.Date}
@@ -337,7 +337,7 @@ const ExamEntry = () => {
 					whileHover={{ scale: 1.01 }}
 					whileTap={{ scale: 1 }}
 					className="col-span-2 bg-green-400 text-green-950 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium shadow h-9 px-4 py-2">
-					Register New Student
+					Register
 				</motion.button>
 			</form>
 		</div>
